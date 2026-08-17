@@ -68,9 +68,7 @@ export default function ContactPage() {
 
 <p><strong>Manoj Tailor</strong> </p>
 
-<p><strong>Human-Led AI</strong></p>
-
-<p></p>` }}
+<p><strong>Human-Led AI</strong></p>` }}
       />
     </>
   );

@@ -126,9 +126,7 @@ export default function HomePage() {
 
 <p>~Manoj </p>
 
-<p><strong>Human-Led AI</strong><em><br><strong>Clear. Capable. Human.</strong></em></p>
-
-<p></p>` }}
+<p><strong>Human-Led AI</strong><em><br><strong>Clear. Capable. Human.</strong></em></p>` }}
       />
     </>
   );

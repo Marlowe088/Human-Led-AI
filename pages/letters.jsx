@@ -18,21 +18,7 @@ export default function LettersPage() {
 
 <p><strong><a href="/join">Join Human-Led AI Letters →</a></strong></p>
 
-<p><em>Free. Unsubscribe at any time.</em><br><br>And whether you join or not: reach out any time. Tell me what excites you here, what you disagree with, or what this site could simply do better. I read every email.<br><br><strong>~Manoj<br>Human-Led AI<br>Clear. Capable. Human.</strong><br><br> </p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
-
-<p></p>` }}
+<p><em>Free. Unsubscribe at any time.</em><br><br>And whether you join or not: reach out any time. Tell me what excites you here, what you disagree with, or what this site could simply do better. I read every email.<br><br><strong>~Manoj<br>Human-Led AI<br>Clear. Capable. Human.</strong><br><br> </p>` }}
       />
       <a href="/join" className="cta">Join Human-Led AI Letters →</a>
     </>

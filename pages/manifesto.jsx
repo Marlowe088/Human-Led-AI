@@ -13,11 +13,7 @@ export default function ManifestoPage() {
 
 <p>Yours.<br><br><strong>An Invitation.</strong><br><br>I hope something in the last few minutes has kindled a small recognition the sense of a thought you have had before but never quite managed to put into words yourself.<br><br>If so: welcome home.<br><br>There is more of this ahead, in the letters and essays that continue where this manifesto leaves off. You do not need to decide anything right now. You only need to keep reading if it still feels true a page from here.<br><br>You can build the life you actually want at work, at home, in all of it and it starts in the same place it always has: knowing what you are actually here for, now happening to take place in the age of AI. Not in a way you will find explained anywhere else on the internet, because almost everyone else writing about this subject is trying to sell you the machine, not help you keep hold of yourself.<br><br>I am glad our paths have crossed. <br><br>I am honoured to be some small part of your journey from here on.<br><br><strong>~Manoj.</strong></p>
 
-<p><strong>Human-Led AI</strong><em><br><strong>Clear. Capable. Human.</strong></em></p>
-
-<p></p>
-
-<p></p>` }}
+<p><strong>Human-Led AI</strong><em><br><strong>Clear. Capable. Human.</strong></em></p>` }}
       />
     </>
   );

@@ -4,7 +4,7 @@
   --ink: #1a1a18;
   --ink-soft: rgba(26, 26, 24, 0.62);
   --ink-faint: rgba(26, 26, 24, 0.38);
-  --indigo: #2e3a59;
+  --indigo: #1f2a47;
   --parchment: #f7f5f0;
   --parchment-deep: #efece4;
   --rule: rgba(46, 58, 89, 0.28);
@@ -31,6 +31,7 @@ body {
 
 a {
   color: var(--indigo);
+  font-weight: 600;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
@@ -82,7 +83,7 @@ a:hover {
 }
 
 .site-header a.logo-link img {
-  height: 34px;
+  height: 48px;
   width: auto;
   display: block;
 }
@@ -175,7 +176,7 @@ hr.rule {
 }
 
 .photo-frame {
-  width: 220px;
+  width: 160px;
   border-radius: 999px 999px 0 0 / 260px 260px 0 0;
   overflow: hidden;
   margin: 0 0 32px;
