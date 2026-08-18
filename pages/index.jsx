@@ -34,7 +34,7 @@ export default function HomePage() {
 
 <p>Thirty-something years later we have cars that drive themselves and machines that write, reason and argue back. Who would ever have thought.</p>
 
-<p>Three decades in and around technology has not made me an engineer. I still cannot code — the most technical thing I do reliably is send email's. What it has given me instead is perspective: the ability to tell a genuine turn in the road from a loud noise. And this is a turn in the road.</p>
+<p>Three decades in and around technology has not made me an engineer. I still cannot code — the most technical thing I do reliably is send emails. What it has given me instead is perspective: the ability to tell a genuine turn in the road from a loud noise. And this is a turn in the road.</p>
 
 <p><strong>The Maths.</strong></p>
 
@@ -44,13 +44,13 @@ export default function HomePage() {
 
 <p>There is something silly about receiving that from a machine. There is also something clarifying about it. I stopped and sat with it. Twenty-five years is not nothing. It is also not very much.</p>
 
-<p>So: no time to waste, and no interest in regret. I need what I do next to outlast me — not a product, but a body of work built on principles old enough and human enough to still hold true no matter how capable the machines become.</p>
+<p>So: no time to waste, and no interest in regret. I want what I do next to outlast me — not a product, but a body of work built on principles old enough and human enough to still hold true no matter how capable the machines become.</p>
 
 <p>That is what this site is. A fresh canvas for my next phase, which is a slightly odd thing to say about a journey that started thirty-five years ago. I expect to be at it for the rest of my life — unless the AI agentic armies render me redundant first.</p>
 
 <p><strong>What They Cannot Take</strong>.</p>
 
-<p>I went swimming at the deep end of the swamp. If intelligence itself is changing hands, what is actually left that is ours?</p>
+<p>I dove into the deep end of the swamp. If intelligence itself is changing hands, what is actually left that is ours?</p>
 
 <p>This is what I keep arriving at:</p>
 
