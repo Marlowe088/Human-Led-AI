@@ -8,21 +8,14 @@ export default function JoinPage() {
       </Head>
       <p className="eyebrow">Join</p>
       <h1>Human-Led AI Letters</h1>
-      <p className="lede">One short letter a week. Free. Leave whenever you like.</p>
+      <p className="lede">
+        One short letter a week. Free. Leave whenever you like. The next step
+        takes you to the sign-up page — it only takes a moment.
+      </p>
       <div className="form-shell">
-        {/*
-          TODO (Manoj): the original WordPress page used a ConvertKit
-          shortcode ([convertkit form=9628670]) which only works inside
-          WordPress and will not render here. Replace this block with
-          your actual ConvertKit embed code, copied from:
-          ConvertKit dashboard > Grow > Landing Pages & Forms >
-          (your form) > Embed > "Embed code (JS)"
-        */}
-        <p className="eyebrow" style={{ marginBottom: 8 }}>Sign-up form</p>
-        <p style={{ marginBottom: 0 }}>
-          This is a placeholder — paste your real ConvertKit embed code here
-          to make the form live.
-        </p>
+        <a href="https://manojtailor-com-2.kit.com/6e715f8c18" className="join-cta">
+          I&apos;m In →
+        </a>
       </div>
     </>
   );
