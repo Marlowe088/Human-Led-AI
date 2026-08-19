@@ -6,7 +6,6 @@ export default function PrivacyPolicyPage() {
       <Head>
         <title>Privacy Policy — Human-Led AI</title>
       </Head>
-      <p className="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
       <div
         dangerouslySetInnerHTML={{ __html: `<p><strong>Privacy Policy</strong>.</p>

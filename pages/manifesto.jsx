@@ -81,7 +81,7 @@ export default function ManifestoPage() {
 
 <p>I am honoured to be some small part of your journey from here on.</p>
 
-<p><strong>~Manoj</strong><br><strong>Human-Led AI</strong><br><strong>Clear. Capable. Human.</strong></p>` }}
+<p><strong>~Manoj</strong><br>Human-Led AI<br>Clear. Capable. Human.</p>` }}
       />
     </>
   );

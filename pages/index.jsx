@@ -124,7 +124,7 @@ export default function HomePage() {
 
 <p><a href="/join"><strong>Join Human-Led AI Letters →</strong></a></p>
 
-<p>~Manoj<br><strong>Human-Led AI</strong><br><strong>Clear. Capable. Human.</strong></p>` }}
+<p><strong>~Manoj</strong><br>Human-Led AI<br>Clear. Capable. Human.</p>` }}
       />
     </>
   );

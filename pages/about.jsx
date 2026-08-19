@@ -86,7 +86,7 @@ export default function AboutPage() {
 
 <p>Please contact me any time. I read every email myself no filters, no AI assistant standing between us.</p>
 
-<p><strong>~Manoj</strong><br><strong>Human-Led AI.<br>Clear. Capable. Human.</strong></p>` }}
+<p><strong>~Manoj</strong><br>Human-Led AI.<br>Clear. Capable. Human.</p>` }}
       />
     </>
   );

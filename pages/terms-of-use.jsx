@@ -6,7 +6,6 @@ export default function TermsOfUsePage() {
       <Head>
         <title>Terms of Use — Human-Led AI</title>
       </Head>
-      <p className="eyebrow">Legal</p>
       <h1>Terms of Use</h1>
       <div
         dangerouslySetInnerHTML={{ __html: `<p><strong>Terms of Use</strong>.</p>

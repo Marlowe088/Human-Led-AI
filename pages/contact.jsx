@@ -66,7 +66,7 @@ export default function ContactPage() {
 
 <p>Start with whatever matters most.</p>
 
-<p><strong>Manoj Tailor</strong><br><strong>Human-Led AI</strong><br><strong>Clear. Capable. Human.</strong></p>` }}
+<p><strong>Manoj Tailor</strong><br>Human-Led AI<br>Clear. Capable. Human.</p>` }}
       />
     </>
   );

@@ -66,11 +66,11 @@ export default function LettersPage() {
 
 <p>These letters are meant to be a quieter place to think about what is changing, what is being gained, what may be lost, and what needs to remain human.</p>
 
-<p><em>Free. Unsubscribe at any time.</em></p>
+<p>It's free and you can unsubscribe at any time.</p>
 
 <p>And whether you join or not: reach out any time. Tell me what excites you here, what you disagree with, or what this site could simply do better. I read every email.</p>
 
-<p><strong>~Manoj<br>Human-Led AI<br>Clear. Capable. Human.</strong></p>` }}
+<p><strong>~Manoj</strong><br>Human-Led AI<br>Clear. Capable. Human.</p>` }}
       />
       <a href="/join" className="cta">Join Human-Led AI Letters →</a>
     </>
