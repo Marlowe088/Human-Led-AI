@@ -134,7 +134,7 @@ export default function CookiePolicyPage() {
 
 <p>You can review or change your choices at any time through:</p>
 
-<p><strong>[Cookie Settings]</strong></p>
+<p><strong>Cookie Settings</strong></p>
 
 <p>The Cookie Settings link should remain accessible in the website footer or through another persistent control. Withdrawing consent should be as straightforward as giving it.</p>
 
@@ -156,7 +156,7 @@ export default function CookiePolicyPage() {
 
 <p><strong>10. Third-party providers</strong>.</p>
 
-<figure><table><thead><tr><td><strong>Service</strong></td><td><strong>Current provider</strong></td></tr></thead><tbody><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Website hosting</td><td><em>[Vercel.com]</em></td></tr><tr><td>Cookie-consent management</td><td><em>[Complainz]</em></td></tr><tr><td>Website security</td><td><em>[WordFence]</em></td></tr><tr><td>Contact forms</td><td><em>[None]</em></td></tr><tr><td>Email forms and delivery</td><td><em>[Kit.com/Surecontact]</em></td></tr><tr><td>Private diagnostic</td><td><em>[none active]</em></td></tr><tr><td>Website analytics</td><td><em>[none active]</em></td></tr><tr><td>Tag management</td><td><em>[none active]</em></td></tr><tr><td>Checkout</td><td><em>[Stripe/Surecart]</em></td></tr><tr><td>Payment processing</td><td><em>[Stripe/Surecart]</em></td></tr><tr><td>Embedded video or audio</td><td><em>[none active]</em></td></tr><tr><td>Advertising or retargeting</td><td>None</td></tr><tr><td>Heatmaps or session recording</td><td>None</td></tr></tbody></table></figure>
+<figure><table><thead><tr><td><strong>Service</strong></td><td><strong>Current provider</strong></td></tr></thead><tbody><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Website hosting</td><td><em>Vercel.com</em></td></tr><tr><td>Cookie-consent management</td><td><em>Complainz</em></td></tr><tr><td>Website security</td><td><em>WordFence</em></td></tr><tr><td>Contact forms</td><td><em>None</em></td></tr><tr><td>Email forms and delivery</td><td><em>Kit.com/Surecontact</em></td></tr><tr><td>Private diagnostic</td><td><em>none active</em></td></tr><tr><td>Website analytics</td><td><em>none active</em></td></tr><tr><td>Tag management</td><td><em>none active</em></td></tr><tr><td>Checkout</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Payment processing</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Embedded video or audio</td><td><em>none active</em></td></tr><tr><td>Advertising or retargeting</td><td>None</td></tr><tr><td>Heatmaps or session recording</td><td>None</td></tr></tbody></table></figure>
 
 <p>Each provider has its own privacy and cookie practices. Where a provider processes personal information, further information is available in the Privacy Policy and through the provider's own privacy information.</p>
 

@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
 
 <li>Whether you requested information about a particular private resource or offer.</li>
 
-<li>Answers submitted through the AI Decision Pressure Profile or another identified diagnostic, questionnaire or survey.</li>
+<li>Answers submitted through a clearly identified diagnostic, questionnaire or survey.</li>
 
 <li>Feedback, replies, comments or testimonials you choose to provide.</li>
 
@@ -214,7 +214,7 @@ export default function PrivacyPolicyPage() {
 
 <p>I do not sell or rent personal information. Information may be shared only where reasonably necessary with service providers that help operate the website and deliver requested content or services.</p>
 
-<figure><table><thead><tr><td><strong>Purpose</strong></td><td><strong>Provider</strong></td></tr></thead><tbody><tr><td>Website hosting</td><td>Vercel.com</td></tr><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Email subscriptions and delivery</td><td><em>[Kit.com/Surecontact]</em></td></tr><tr><td>Contact forms</td><td><em>[None]</em></td></tr><tr><td>Diagnostic forms</td><td><em>[none active]</em></td></tr><tr><td>Payment processing</td><td>Stripe, Surecart where used</td></tr><tr><td>Checkout or product delivery</td><td><em>[Stripe/Surecart]</em></td></tr><tr><td>Website analytics</td><td><em>["no optional analytics currently used"]</em></td></tr><tr><td>Cookie consent management</td><td><em>[Complainz]</em></td></tr><tr><td>Website security and spam protection</td><td><em>[WordFence]</em></td></tr></tbody></table></figure>
+<figure><table><thead><tr><td><strong>Purpose</strong></td><td><strong>Provider</strong></td></tr></thead><tbody><tr><td>Website hosting</td><td>Vercel.com</td></tr><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Email subscriptions and delivery</td><td><em>Kit.com/Surecontact</em></td></tr><tr><td>Contact forms</td><td><em>None</em></td></tr><tr><td>Diagnostic forms</td><td><em>none active</em></td></tr><tr><td>Payment processing</td><td>Stripe, Surecart where used</td></tr><tr><td>Checkout or product delivery</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Website analytics</td><td><em>"no optional analytics currently used"</em></td></tr><tr><td>Cookie consent management</td><td><em>Complainz</em></td></tr><tr><td>Website security and spam protection</td><td><em>WordFence</em></td></tr></tbody></table></figure>
 
 <p>Information may also be disclosed to accountants, legal or professional advisers, insurers, regulators, tax authorities, and courts or law-enforcement bodies where legally required, or to a purchaser or successor if the website or related business is transferred, subject to appropriate protections.</p>
 
