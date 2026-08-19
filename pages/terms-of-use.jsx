@@ -6,11 +6,9 @@ export default function TermsOfUsePage() {
       <Head>
         <title>Terms of Use — Human-Led AI</title>
       </Head>
-      <h1>Terms of Use</h1>
+      <h1 className="legal-title">Terms of Use</h1>
       <div
-        dangerouslySetInnerHTML={{ __html: `<p><strong>Terms of Use</strong>.</p>
-
-<p><strong>manojtailor.com — Human-Led AI</strong></p>
+        dangerouslySetInnerHTML={{ __html: `<p><strong>manojtailor.com — Human-Led AI</strong></p>
 
 <p>Last updated: August 2026</p>
 

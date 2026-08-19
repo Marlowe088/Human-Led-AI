@@ -6,11 +6,9 @@ export default function DisclaimerPage() {
       <Head>
         <title>Disclaimer — Human-Led AI</title>
       </Head>
-      <h1>Disclaimer</h1>
+      <h1 className="legal-title">Disclaimer</h1>
       <div
-        dangerouslySetInnerHTML={{ __html: `<p><strong>Disclaimer</strong></p>
-
-<p><strong>manojtailor.com — Human-Led AI</strong></p>
+        dangerouslySetInnerHTML={{ __html: `<p><strong>manojtailor.com — Human-Led AI</strong></p>
 
 <p>Last updated: August 2026</p>
 

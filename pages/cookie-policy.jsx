@@ -6,11 +6,9 @@ export default function CookiePolicyPage() {
       <Head>
         <title>Cookie Policy — Human-Led AI</title>
       </Head>
-      <h1>Cookie Policy</h1>
+      <h1 className="legal-title">Cookie Policy</h1>
       <div
-        dangerouslySetInnerHTML={{ __html: `<p><strong>Cookies Policy</strong></p>
-
-<p><strong>manojtailor.com — Human-Led AI</strong>.</p>
+        dangerouslySetInnerHTML={{ __html: `<p><strong>manojtailor.com — Human-Led AI</strong>.</p>
 
 <p>Last updated: August 2026.</p>
 
