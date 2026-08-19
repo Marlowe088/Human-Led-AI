@@ -32,7 +32,7 @@ export default function HomePage() {
 
 <p>It took me the best part of three months to send my first email. When I finally managed it, I genuinely thought aliens had landed. I remember telling friends: "<em>you mean I type words on the keyboard, and someone halfway around the world reads them?</em>"</p>
 
-<p>Thirty-something years later we have cars that drive themselves and machines that write, reason and argue back. Who would ever have thought.</p>
+<p>Thirty-something years later we have cars that drive themselves and machines that write, reason and argue back. Who would ever have thought!</p>
 
 <p>Three decades in and around technology has not made me an engineer. I still cannot code — the most technical thing I do reliably is send emails. What it has given me instead is perspective: the ability to tell a genuine turn in the road from a loud noise. And this is a turn in the road.</p>
 
@@ -124,9 +124,7 @@ export default function HomePage() {
 
 <p><a href="/join"><strong>Join Human-Led AI Letters →</strong></a><strong></strong></p>
 
-<p>~Manoj </p>
-
-<p><strong>Human-Led AI</strong><em><br><strong>Clear. Capable. Human.</strong></em></p>` }}
+<p>~Manoj<br><strong>Human-Led AI</strong><br><strong>Clear. Capable. Human.</strong></p>` }}
       />
     </>
   );
