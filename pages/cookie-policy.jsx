@@ -209,9 +209,7 @@ export default function CookiePolicyPage() {
 
 <p>The website aims to use cookies and related technologies only for clear purposes, in proportion to what the website needs, with meaningful visitor choice, without hiding optional tracking behind essential functions, without selling personal information, and without granting third-party technologies more access than is necessary.</p>
 
-<p>The live cookie schedule — not a list of hypothetical services — should provide the final record of what is actually used.</p>
-
-<p></p>` }}
+<p>The live cookie schedule — not a list of hypothetical services — should provide the final record of what is actually used.</p>` }}
       />
     </>
   );

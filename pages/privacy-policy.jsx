@@ -217,7 +217,7 @@ export default function PrivacyPolicyPage() {
 
 <p>I do not sell or rent personal information. Information may be shared only where reasonably necessary with service providers that help operate the website and deliver requested content or services.</p>
 
-<figure><table><thead><tr><td><strong>Purpose</strong></td><td><strong>Provider</strong></td></tr></thead><tbody><tr><td>Website hosting</td><td><em>[x-cloud.com]</em></td></tr><tr><td>Website platform</td><td>WordPress</td></tr><tr><td>Email subscriptions and delivery</td><td><em>[Kit.com/Surecontact]</em></td></tr><tr><td>Contact forms</td><td><em>[None]</em></td></tr><tr><td>Diagnostic forms</td><td>Tally</td></tr><tr><td>Payment processing</td><td>Stripe, Surecart where used</td></tr><tr><td>Checkout or product delivery</td><td><em>[Stripe/Surecart]</em></td></tr><tr><td>Website analytics</td><td><em>["no optional analytics currently used"]</em></td></tr><tr><td>Cookie consent management</td><td><em>[Complainz]</em></td></tr><tr><td>Website security and spam protection</td><td><em>[WordFence]</em></td></tr></tbody></table></figure>
+<figure><table><thead><tr><td><strong>Purpose</strong></td><td><strong>Provider</strong></td></tr></thead><tbody><tr><td>Website hosting</td><td>Vercel.com</td></tr><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Email subscriptions and delivery</td><td><em>[Kit.com/Surecontact]</em></td></tr><tr><td>Contact forms</td><td><em>[None]</em></td></tr><tr><td>Diagnostic forms</td><td><em>[none active]</em></td></tr><tr><td>Payment processing</td><td>Stripe, Surecart where used</td></tr><tr><td>Checkout or product delivery</td><td><em>[Stripe/Surecart]</em></td></tr><tr><td>Website analytics</td><td><em>["no optional analytics currently used"]</em></td></tr><tr><td>Cookie consent management</td><td><em>[Complainz]</em></td></tr><tr><td>Website security and spam protection</td><td><em>[WordFence]</em></td></tr></tbody></table></figure>
 
 <p>Information may also be disclosed to accountants, legal or professional advisers, insurers, regulators, tax authorities, and courts or law-enforcement bodies where legally required, or to a purchaser or successor if the website or related business is transferred, subject to appropriate protections.</p>
 
@@ -263,7 +263,7 @@ export default function PrivacyPolicyPage() {
 
 <p>You also have the right to complain to the UK supervisory authority:</p>
 
-<p>Information Commissioner's Office [Link: Visit the ICO website]</p>
+<p>Information Commissioner's Office — <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">Visit the ICO website</a></p>
 
 <p>I would appreciate the opportunity to address your concern directly before you contact the ICO, although you are not required to contact me first.</p>
 
@@ -301,13 +301,7 @@ export default function PrivacyPolicyPage() {
 
 <p>Your personal information will be used only where there is a clear and proportionate reason. It will not be sold or rented. Joining the email list does not automatically enrol you into every private promotion. Diagnostic personalisation will not be used to make legally or similarly significant decisions about you.</p>
 
-<p>The aim is to handle personal information in a way consistent with the wider principles of this site: clearly, proportionately, and with human responsibility remaining visible.</p>
-
-<p></p>
-
-<p></p>
-
-<p></p>` }}
+<p>The aim is to handle personal information in a way consistent with the wider principles of this site: clearly, proportionately, and with human responsibility remaining visible.</p>` }}
       />
     </>
   );

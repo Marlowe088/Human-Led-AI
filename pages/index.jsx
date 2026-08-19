@@ -102,7 +102,7 @@ export default function HomePage() {
 
 <p>If you meet anyone who claims to have AI figured out, walk away quickly.</p>
 
-<p>We have gone from the model behind the first ChatGPT 3.5 to today's frontier systems - Chat GPT 5.6 Sol, Claude.ai, Gemini and Grok in under four years. Nobody credible knows where the next four go. I am still learning, and I will be wrong about things in public.</p>
+<p>We have gone from the model behind the first ChatGPT 3.5 to today's frontier systems - ChatGPT 5.6 Sol, Claude.ai, Gemini and Grok in under four years. Nobody credible knows where the next four go. I am still learning, and I will be wrong about things in public.</p>
 
 <p>What I can offer is not certainty. It is a way of thinking that holds its shape while the tools keep changing underneath it.</p>
 
@@ -118,11 +118,11 @@ export default function HomePage() {
 
 <p>If you want the full argument — what human-led actually means, where AI's authority should end, and why oversight so often becomes ceremony:</p>
 
-<p><a href="/manifesto"><strong>Read the Manifesto →</strong></a><strong></strong></p>
+<p><a href="/manifesto"><strong>Read the Manifesto →</strong></a></p>
 
 <p>If you would rather sit with this a while first, I write one letter a week on the same ground. It's free, and you can leave whenever you like.</p>
 
-<p><a href="/join"><strong>Join Human-Led AI Letters →</strong></a><strong></strong></p>
+<p><a href="/join"><strong>Join Human-Led AI Letters →</strong></a></p>
 
 <p>~Manoj<br><strong>Human-Led AI</strong><br><strong>Clear. Capable. Human.</strong></p>` }}
       />

@@ -203,11 +203,7 @@ export default function DisclaimerPage() {
 
 <p>It can offer better questions, useful distinctions, structured reflection, practical frameworks, and support for more deliberate judgement.</p>
 
-<p>The responsibility to understand, verify, decide and act remains human. Use AI and the material on this site as support for judgement — not as a substitute for it.</p>
-
-<p></p>
-
-<p></p>` }}
+<p>The responsibility to understand, verify, decide and act remains human. Use AI and the material on this site as support for judgement — not as a substitute for it.</p>` }}
       />
     </>
   );

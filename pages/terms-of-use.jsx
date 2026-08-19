@@ -27,7 +27,7 @@ export default function TermsOfUsePage() {
 
 <p>This website is operated by:</p>
 
-<p>Manoj Tailor Website: manojtailor.com Email: manoj@manojtailor.com Business or correspondence address: [61 Bridge St, Kington. HR5 3DJ. England. UK]</p>
+<p>Manoj Tailor Website: manojtailor.com Email: manoj@manojtailor.com Business or correspondence address: 61 Bridge St, Kington, HR5 3DJ, England, UK</p>
 
 <p>Questions about these Terms can be sent to the email address above.</p>
 
@@ -91,7 +91,7 @@ export default function TermsOfUsePage() {
 
 <p><strong>10. Email communications</strong>.</p>
 
-<p>When you join the email list, you agree to receive the seven-day email series, then the weekly newsletter after the introductory series. </p>
+<p>When you join the email list, you agree to receive the seven-day email series, then the weekly newsletter after the introductory series.</p>
 
 <p>After the series, you may receive a hand-raiser email asking whether you would like information about a relevant private resource or offer.</p>
 
@@ -293,7 +293,7 @@ export default function TermsOfUsePage() {
 
 <p>Questions, complaints or requests concerning these Terms, a product or a purchase can be sent to:</p>
 
-<p>Manoj Tailor Email: manoj@manojtailor.com Website: manojtailor.com Address: <em>[61 Bridge St, Kington, HR5 3DJ. England. UK]</em></p>
+<p>Manoj Tailor Email: manoj@manojtailor.com Website: manojtailor.com Address: 61 Bridge St, Kington, HR5 3DJ, England, UK</p>
 
 <p>Please include your name, the email address used for purchase, the product concerned, the date of purchase where relevant, and a clear description of the issue. Do not send complete payment-card details or unnecessary sensitive information.</p>
 
@@ -305,9 +305,7 @@ export default function TermsOfUsePage() {
 
 <p>AI, frameworks and educational materials may assist your thinking. They do not remove the need for human context, appropriate verification and personal responsibility.</p>
 
-<p>Use the material as support for human-led AI judgement — not as a substitute for it.</p>
-
-<p></p>` }}
+<p>Use the material as support for human-led AI judgement — not as a substitute for it.</p>` }}
       />
     </>
   );
