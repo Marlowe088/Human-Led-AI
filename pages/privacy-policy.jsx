@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
 
 <p><strong>Purchase information.</strong> If you purchase a product or service, I may receive information such as your name, email address, billing address or country, product purchased, transaction date, amount and currency, payment status, and refund or dispute information. Payment-card details are processed by the payment provider identified at checkout. I do not directly receive or store your complete payment-card number.</p>
 
-<p><strong>4. Please do not submit sensitive information</strong></p>
+<p><strong>4. Please do not submit sensitive information.</strong></p>
 
 <p>The website, email list and diagnostic are not designed to collect special-category or highly sensitive personal information. Please do not submit unnecessary information about:</p>
 
