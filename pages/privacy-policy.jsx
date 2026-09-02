@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
 
 <p>Your privacy matters.</p>
 
-<p>This Privacy Policy explains how I collect, use, store and share personal information when you visit manojtailor.com, join the email list, contact me, complete a private diagnostic, request information about an offer, or purchase a product or service.</p>
+<p>This Privacy Policy explains how I collect, use, store and share personal information when you visit manojtailor.com, join the email list, contact me, request information about an offer, or purchase a product or service.</p>
 
 <p>This website is operated from the United Kingdom and may be accessed by people around the world.</p>
 
@@ -30,8 +30,6 @@ export default function PrivacyPolicyPage() {
 <li>The weekly newsletter and other emails you request.</li>
 
 <li>Contact forms and direct correspondence.</li>
-
-<li>Other clearly identified diagnostics or questionnaires.</li>
 
 <li>Private offer invitations.</li>
 
@@ -68,8 +66,6 @@ export default function PrivacyPolicyPage() {
 <li>Your email subscription and communication preferences.</li>
 
 <li>Whether you requested information about a particular private resource or offer.</li>
-
-<li>Answers submitted through a clearly identified diagnostic, questionnaire or survey.</li>
 
 <li>Feedback, replies, comments or testimonials you choose to provide.</li>
 
@@ -110,7 +106,7 @@ export default function PrivacyPolicyPage() {
 
 <p><strong>4. Please do not submit sensitive information</strong></p>
 
-<p>The website, email list and diagnostic are not designed to collect special-category or highly sensitive personal information. Please do not submit unnecessary information about:</p>
+<p>The website and email list are not designed to collect special-category or highly sensitive personal information. Please do not submit unnecessary information about:</p>
 
 <ul>
 <li>Physical or mental health.</li>
@@ -146,7 +142,7 @@ export default function PrivacyPolicyPage() {
 
 <p><strong>5. How I collect information</strong>.</p>
 
-<p>Information may be collected when you browse the website, join the email list, receive or interact with an email, complete a contact form, send an email or reply, click a hand-raiser link requesting private information, complete the diagnostics or another identified form, purchase or access a digital product or service, respond to a survey or feedback request, provide a testimonial, or interact with an embedded form, checkout or other third-party service.</p>
+<p>Information may be collected when you browse the website, join the email list, receive or interact with an email, complete a contact form, send an email or reply, click a hand-raiser link requesting private information, purchase or access a digital product or service, respond to a survey or feedback request, provide a testimonial, or interact with an embedded form, checkout or other third-party service.</p>
 
 <p>Some information is collected directly from you. Other information may be collected automatically through website, security, email, form, payment and analytics technologies.</p>
 
@@ -160,8 +156,6 @@ export default function PrivacyPolicyPage() {
 
 <p><strong>Contact and correspondence.</strong> I use information you provide to read, manage and respond to enquiries. Lawful basis: legitimate interests in communicating with readers, customers and relevant professional contacts.</p>
 
-<p><strong>Diagnostics and personalised results.</strong> I use diagnostic answers to calculate and deliver your dominant decision-making profile, personalise your result, identify material patterns in the decision pressure you describe, provide related follow-up that you have requested, improve the diagnostic and associated resources, and analyse aggregated or anonymised patterns. Lawful basis: consent when you voluntarily complete a free diagnostic; contract where the diagnostic forms part of a purchased product or service.</p>
-
 <p><strong>Purchases and delivery.</strong> I use customer information to process and confirm a purchase, deliver the product or service, provide access and onboarding, respond to customer-support requests, and administer refunds, complaints or disputes. Lawful basis: contract.</p>
 
 <p><strong>Accounting and legal records.</strong> I may retain transaction and business records where required for tax, accounting, fraud prevention, dispute management or other legal purposes. Lawful basis: legal obligation and, where appropriate, legitimate interests.</p>
@@ -170,7 +164,7 @@ export default function PrivacyPolicyPage() {
 
 <p><strong>Website and service improvement.</strong> I may use limited information to understand which pages and subjects are useful, whether forms and emails function correctly, where visitors encounter problems, and how the reader and customer experience can be improved. Lawful basis: legitimate interests where no consent is required; consent where cookies or similar technologies require it.</p>
 
-<p><strong>Feedback and testimonials.</strong> I may ask for optional feedback about the website, diagnostic, content or a purchased product. Feedback may be used internally to improve the work. I will not publish your name, identifiable quotation or personal story as a testimonial without appropriate permission. Lawful basis: legitimate interests for requesting and reviewing feedback; consent for publishing an identifiable testimonial.</p>
+<p><strong>Feedback and testimonials.</strong> I may ask for optional feedback about the website, content or a purchased product. Feedback may be used internally to improve the work. I will not publish your name, identifiable quotation or personal story as a testimonial without appropriate permission. Lawful basis: legitimate interests for requesting and reviewing feedback; consent for publishing an identifiable testimonial.</p>
 
 <p><strong>7. Email communications</strong>.</p>
 
@@ -180,47 +174,37 @@ export default function PrivacyPolicyPage() {
 
 <p><strong>If you do not raise your hand,</strong> you continue receiving the weekly newsletter as normal. You are not automatically placed into the private promotional sequence.</p>
 
-<p><strong>If you raise your hand,</strong> you may receive access to the relevant private diagnostic or information, your requested diagnostic result, a short promotional sequence concerning that specific offer, and/or other similar offers and necessary purchase and onboarding emails if you buy.</p>
+<p><strong>If you raise your hand,</strong> you may receive access to the relevant private information, a short promotional sequence concerning that specific offer, and/or other similar offers and necessary purchase and onboarding emails if you buy.</p>
 
 <p>You can unsubscribe from editorial and promotional emails at any time. Purchase confirmations, access information and other necessary service communications may still be sent where required to fulfil a transaction.</p>
 
 <p><strong>Email measurement.</strong> The email provider may record delivery, bounces, opens, link clicks, unsubscribes, and communication preferences. This information is used only where the relevant tracking is enabled and legally permitted.</p>
 
-<p><strong>8. Diagnostics and Profiles.</strong></p>
-
-<p>Diagnostics if offered are reflective and educational diagnostics. It uses your submitted answers to identify your dominant decision-making pattern.</p>
-
-<p>The result may be used to personalise the profile explanation you receive, relevant follow-up emails you have requested, and examples or guidance relating to your decision pattern.</p>
-
-<p>The profile is <strong>not</strong>: a medical or psychological diagnosis; a formal psychometric assessment; a judgement of intelligence or capability; a fixed statement of identity; legal, financial, medical or other professional advice; or a decision about your eligibility for employment, credit, insurance, education, healthcare or another significant service.</p>
-
-<p>The profile may be produced automatically from the answers you submit, but it is not used to make a decision that has a legal or similarly significant effect upon you. You remain responsible for deciding whether the result is useful and how, if at all, you apply it.</p>
-
-<p><strong>9. AI-assisted working practices</strong>.</p>
+<p><strong>8. AI-assisted working practices</strong>.</p>
 
 <p>I use AI-assisted tools in parts of my own research, drafting, organisation, analysis and product-development work. Where personal information is involved, I aim to use only what is reasonably necessary, remove identifying details where practical, avoid submitting unnecessary sensitive information, review AI-assisted work using human judgement, and avoid allowing an AI system to make a legally or similarly significant decision about an individual.</p>
 
-<p>Diagnostic answers, contact messages and customer information will not be deliberately shared with an AI provider merely for convenience where the same purpose can reasonably be achieved without identifiable information.</p>
+<p>Contact messages and customer information will not be deliberately shared with an AI provider merely for convenience where the same purpose can reasonably be achieved without identifiable information.</p>
 
 <p>AI-assisted tools support the work. They do not replace human responsibility for how personal information is handled.</p>
 
-<p><strong>10. Cookies and similar technologies</strong>.</p>
+<p><strong>9. Cookies and similar technologies</strong>.</p>
 
 <p>The website may use cookies or similar technologies to operate essential website functions, remember privacy choices, secure forms and transactions, support email sign-up and checkout, enable embedded services, and measure website use where optional analytics have been enabled.</p>
 
 <p>Non-essential cookies or similar technologies will be used only where the required choice or consent has been obtained. Details are provided in the separate Cookies Policy.</p>
 
-<p><strong>11. Who may receive your information?</strong></p>
+<p><strong>10. Who may receive your information?</strong></p>
 
 <p>I do not sell or rent personal information. Information may be shared only where reasonably necessary with service providers that help operate the website and deliver requested content or services.</p>
 
-<figure><table><thead><tr><td><strong>Purpose</strong></td><td><strong>Provider</strong></td></tr></thead><tbody><tr><td>Website hosting</td><td>Vercel.com</td></tr><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Email subscriptions and delivery</td><td><em>Kit.com/Surecontact</em></td></tr><tr><td>Contact forms</td><td><em>None</em></td></tr><tr><td>Diagnostic forms</td><td><em>none active</em></td></tr><tr><td>Payment processing</td><td>Stripe, Surecart where used</td></tr><tr><td>Checkout or product delivery</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Website analytics</td><td><em>"no optional analytics currently used"</em></td></tr><tr><td>Cookie consent management</td><td><em>Complainz</em></td></tr><tr><td>Website security and spam protection</td><td><em>WordFence</em></td></tr></tbody></table></figure>
+<figure><table><thead><tr><td><strong>Purpose</strong></td><td><strong>Provider</strong></td></tr></thead><tbody><tr><td>Website hosting</td><td>Vercel.com</td></tr><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Email subscriptions and delivery</td><td><em>Kit.com/Surecontact</em></td></tr><tr><td>Contact forms</td><td><em>None</em></td></tr><tr><td>Payment processing</td><td>Stripe, Surecart where used</td></tr><tr><td>Checkout or product delivery</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Website analytics</td><td><em>"no optional analytics currently used"</em></td></tr><tr><td>Cookie consent management</td><td><em>Complainz</em></td></tr><tr><td>Website security and spam protection</td><td><em>WordFence</em></td></tr></tbody></table></figure>
 
 <p>Information may also be disclosed to accountants, legal or professional advisers, insurers, regulators, tax authorities, and courts or law-enforcement bodies where legally required, or to a purchaser or successor if the website or related business is transferred, subject to appropriate protections.</p>
 
 <p>Each third-party provider processes information under its own contractual and privacy arrangements. You should review the provider information shown at the point where you submit a form, subscribe or make a purchase.</p>
 
-<p><strong>12. International processing and global customers</strong>.</p>
+<p><strong>11. International processing and global customers</strong>.</p>
 
 <p>This website is operated from the United Kingdom and sells or provides content to people in different countries. Some service providers may process information outside the United Kingdom.</p>
 
@@ -230,15 +214,13 @@ export default function PrivacyPolicyPage() {
 
 <p>This policy does not claim that every foreign privacy law applies to every visitor or transaction. Where a particular law applies, I will aim to respect the rights and obligations it creates.</p>
 
-<p><strong>13. How long information is kept</strong>.</p>
+<p><strong>12. How long information is kept</strong>.</p>
 
 <p>Personal information is retained only for as long as reasonably required for the purpose for which it was collected, including legal, accounting, security and dispute-management requirements.</p>
 
 <p><strong>Email subscriptions</strong> are retained while you remain subscribed. After you unsubscribe, limited information may be retained on a suppression list so that your opt-out preference can continue to be honoured.</p>
 
 <p><strong>Contact enquiries and correspondence</strong> will normally be retained for up to 24 months after the enquiry is resolved, unless there is a valid reason to retain them longer.</p>
-
-<p><strong>Diagnostic responses</strong> will normally be retained for up to 24 months after completion or your last relevant interaction. Responses may be anonymised or aggregated and retained for longer where they can no longer reasonably identify you.</p>
 
 <p><strong>Customer and transaction records</strong> will be retained for the period required by applicable UK tax and accounting law and for any additional period reasonably needed to deal with disputes or legal claims.</p>
 
@@ -250,7 +232,7 @@ export default function PrivacyPolicyPage() {
 
 <p>When information is no longer required, it will be deleted, anonymised or securely archived as appropriate.</p>
 
-<p><strong>14. Your rights</strong>.</p>
+<p><strong>13. Your rights</strong>.</p>
 
 <p>Depending on the circumstances and lawful basis, UK data protection law may give you the right to be informed about how your information is used, request access to your personal information, ask for inaccurate information to be corrected, request deletion of your information, ask for processing to be restricted, object to certain processing, request transfer of information you provided in a portable format, withdraw consent at any time where consent is the lawful basis, raise concerns about automated processing, and complain to the Information Commissioner's Office.</p>
 
@@ -264,29 +246,29 @@ export default function PrivacyPolicyPage() {
 
 <p>I would appreciate the opportunity to address your concern directly before you contact the ICO, although you are not required to contact me first.</p>
 
-<p><strong>15. Security</strong>.</p>
+<p><strong>14. Security</strong>.</p>
 
 <p>I use reasonable technical and organisational measures intended to protect personal information. Depending on the services used, these may include reputable hosting and service providers, restricted account access, strong passwords, two-factor authentication where available, encrypted website connections, secure payment processing, software and plugin updates, spam and security controls, data minimisation, and regular review of the tools used.</p>
 
 <p>No website, email system or online service can guarantee complete security. Please avoid sending confidential or highly sensitive information through ordinary email or public website forms.</p>
 
-<p><strong>16. Children</strong>.</p>
+<p><strong>15. Children</strong>.</p>
 
-<p>This website and its products are intended for adults. I do not knowingly invite children to join the email list, complete the diagnostic or purchase products. Please do not submit personal information about a child unless it is genuinely necessary, lawful and appropriate.</p>
+<p>This website and its products are intended for adults. I do not knowingly invite children to join the email list or purchase products. Please do not submit personal information about a child unless it is genuinely necessary, lawful and appropriate.</p>
 
 <p>If you believe a child has provided personal information through this website, contact me at manoj@manojtailor.com so the matter can be reviewed and the information deleted where appropriate.</p>
 
-<p><strong>17. Third-party links and embedded content</strong>.</p>
+<p><strong>16. Third-party links and embedded content</strong>.</p>
 
 <p>The website may link to or embed material from third-party websites, platforms or services. Those third parties have their own privacy practices. I am not responsible for how an external website or service collects and uses information after you leave this website or interact directly with its content. Review the relevant third party's privacy information before submitting personal data.</p>
 
-<p><strong>18. Changes to this policy</strong>.</p>
+<p><strong>17. Changes to this policy</strong>.</p>
 
-<p>This Privacy Policy may be updated when website services change, a new provider is introduced, a new diagnostic or product is launched, legal requirements or regulatory guidance change, or the way personal information is used changes.</p>
+<p>This Privacy Policy may be updated when website services change, a new provider is introduced, a new product is launched, legal requirements or regulatory guidance change, or the way personal information is used changes.</p>
 
 <p>The current version and last-updated date will remain available on this page. Where a change materially affects how existing subscriber or customer information is used, an appropriate notice or new consent will be provided where required.</p>
 
-<p><strong>19. Contact and complaints</strong>.</p>
+<p><strong>18. Contact and complaints</strong>.</p>
 
 <p>Questions, requests or concerns about this Privacy Policy can be sent to:</p>
 
@@ -294,9 +276,9 @@ export default function PrivacyPolicyPage() {
 
 <p>Please include enough information for me to understand and respond to your request, but do not send unnecessary sensitive information.</p>
 
-<p><strong>20. Summary</strong>.</p>
+<p><strong>19. Summary</strong>.</p>
 
-<p>Your personal information will be used only where there is a clear and proportionate reason. It will not be sold or rented. Joining the email list does not automatically enrol you into every private promotion. Diagnostic personalisation will not be used to make legally or similarly significant decisions about you.</p>
+<p>Your personal information will be used only where there is a clear and proportionate reason. It will not be sold or rented. Joining the email list does not automatically enrol you into every private promotion.</p>
 
 <p>The aim is to handle personal information in a way consistent with the wider principles of this site: clearly, proportionately, and with human responsibility remaining visible.</p>` }}
       />

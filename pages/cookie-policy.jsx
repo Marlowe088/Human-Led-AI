@@ -16,7 +16,7 @@ export default function CookiePolicyPage() {
 
 <p>This Cookies Policy explains how manojtailor.com uses cookies and similar technologies when you visit or interact with the website.</p>
 
-<p>The website may use these technologies to make pages and forms work, protect the website from misuse and security threats, remember your cookie choices, support email subscription forms, deliver private diagnostics, enable secure checkout and payment, understand website use where appropriate, and support third-party content or services that you choose to use.</p>
+<p>The website may use these technologies to make pages and forms work, protect the website from misuse and security threats, remember your cookie choices, support email subscription forms, enable secure checkout and payment, understand website use where appropriate, and support third-party content or services that you choose to use.</p>
 
 <p>Only technologies that are genuinely installed and active should be listed in this policy and in the cookie schedule below.</p>
 
@@ -74,15 +74,7 @@ export default function CookiePolicyPage() {
 
 <p>Technologies genuinely necessary to submit and secure a form may operate under an applicable exception. Any optional measurement or tracking connected to the form will be consent-controlled where required.</p>
 
-<p><strong>4.6 Diagnostic and questionnaire technologies</strong>.</p>
-
-<p>Private diagnostics, may be delivered using Tally or another provider clearly identified at the point of use.</p>
-
-<p>These services may use technologies to display and operate the form, remember form progress, submit responses, prevent abuse, deliver a result, maintain security, support conditional question paths, and connect responses with requested follow-up.</p>
-
-<p>Some necessary form technologies may operate under an applicable legal exception. Optional analytics or tracking used by the form provider will be blocked until consent where required. Completing the diagnostic does not permit unrelated advertising or tracking.</p>
-
-<p><strong>4.7 Payment and checkout technologies</strong>.</p>
+<p><strong>4.6 Payment and checkout technologies</strong>.</p>
 
 <p>Where products or services are available for purchase, checkout and payment providers may use technologies to maintain the checkout session, process the transaction, prevent fraud, protect payment information, remember the contents of a basket, confirm an order, and manage customer access.</p>
 
@@ -90,7 +82,7 @@ export default function CookiePolicyPage() {
 
 <p>I do not directly store complete payment-card details.</p>
 
-<p><strong>4.8 Embedded third-party content</strong>.</p>
+<p><strong>4.7 Embedded third-party content</strong>.</p>
 
 <p>Some pages may contain content or services supplied by another organisation, such as forms, videos, audio, payment tools, downloadable documents, booking services, surveys, or demonstrations.</p>
 
@@ -98,13 +90,13 @@ export default function CookiePolicyPage() {
 
 <p>Where an embedded service uses non-exempt technologies, it should remain blocked until the required consent has been given. The relevant third party should be identified before the content is activated.</p>
 
-<p><strong>4.9 Advertising and retargeting technologies</strong>.</p>
+<p><strong>4.8 Advertising and retargeting technologies</strong>.</p>
 
 <p>This website does not use advertising, behavioural retargeting or cross-site profiling technologies unless the current cookie schedule expressly states that they have been activated.</p>
 
 <p>Should these technologies be introduced, this policy and the cookie schedule will be updated before or when the processing begins. Advertising and retargeting technologies will not be activated before the required consent has been obtained. This includes technologies used to build advertising audiences, retarget website visitors, personalise advertisements, track people across websites, measure advertising campaigns, or infer interests or behaviour for advertising.</p>
 
-<p><strong>4.10 Heatmaps and session recordings</strong>.</p>
+<p><strong>4.9 Heatmaps and session recordings</strong>.</p>
 
 <p>This website does not use heatmaps or session-recording technologies unless the current cookie schedule expressly identifies an active provider.</p>
 
@@ -134,7 +126,7 @@ export default function CookiePolicyPage() {
 
 <p>You can review or change your choices at any time through:</p>
 
-<p><strong>Cookie Settings</strong></p>
+<p><strong>Cookie Settings.</strong></p>
 
 <p>The Cookie Settings link should remain accessible in the website footer or through another persistent control. Withdrawing consent should be as straightforward as giving it.</p>
 
@@ -156,7 +148,7 @@ export default function CookiePolicyPage() {
 
 <p><strong>10. Third-party providers</strong>.</p>
 
-<figure><table><thead><tr><td><strong>Service</strong></td><td><strong>Current provider</strong></td></tr></thead><tbody><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Website hosting</td><td><em>Vercel.com</em></td></tr><tr><td>Cookie-consent management</td><td><em>Complainz</em></td></tr><tr><td>Website security</td><td><em>WordFence</em></td></tr><tr><td>Contact forms</td><td><em>None</em></td></tr><tr><td>Email forms and delivery</td><td><em>Kit.com/Surecontact</em></td></tr><tr><td>Private diagnostic</td><td><em>none active</em></td></tr><tr><td>Website analytics</td><td><em>none active</em></td></tr><tr><td>Tag management</td><td><em>none active</em></td></tr><tr><td>Checkout</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Payment processing</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Embedded video or audio</td><td><em>none active</em></td></tr><tr><td>Advertising or retargeting</td><td>None</td></tr><tr><td>Heatmaps or session recording</td><td>None</td></tr></tbody></table></figure>
+<figure><table><thead><tr><td><strong>Service</strong></td><td><strong>Current provider</strong></td></tr></thead><tbody><tr><td>Website platform</td><td>Vercel.com</td></tr><tr><td>Website hosting</td><td><em>Vercel.com</em></td></tr><tr><td>Cookie-consent management</td><td><em>Complainz</em></td></tr><tr><td>Website security</td><td><em>WordFence</em></td></tr><tr><td>Contact forms</td><td><em>None</em></td></tr><tr><td>Email forms and delivery</td><td><em>Kit.com/Surecontact</em></td></tr><tr><td>Website analytics</td><td><em>none active</em></td></tr><tr><td>Tag management</td><td><em>none active</em></td></tr><tr><td>Checkout</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Payment processing</td><td><em>Stripe/Surecart</em></td></tr><tr><td>Embedded video or audio</td><td><em>none active</em></td></tr><tr><td>Advertising or retargeting</td><td>None</td></tr><tr><td>Heatmaps or session recording</td><td>None</td></tr></tbody></table></figure>
 
 <p>Each provider has its own privacy and cookie practices. Where a provider processes personal information, further information is available in the Privacy Policy and through the provider's own privacy information.</p>
 
@@ -170,7 +162,7 @@ export default function CookiePolicyPage() {
 
 <p>Most browsers allow you to view stored cookies, delete individual cookies, delete all cookies, block third-party cookies, block all cookies, clear cookies when the browser closes, and limit tracking technologies.</p>
 
-<p>Browser controls operate separately from the website's Cookie Settings tool. Blocking every cookie may prevent functions such as forms, diagnostics, logins or checkout from working correctly. Instructions are normally available within the privacy or security section of your browser settings.</p>
+<p>Browser controls operate separately from the website's Cookie Settings tool. Blocking every cookie may prevent functions such as forms, logins or checkout from working correctly. Instructions are normally available within the privacy or security section of your browser settings.</p>
 
 <p><strong>13. Cookies and personal information</strong>.</p>
 
@@ -192,7 +184,7 @@ export default function CookiePolicyPage() {
 
 <p><strong>16. Changes to this policy</strong>.</p>
 
-<p>This Cookies Policy may be updated when a technology is added or removed, a provider changes, a cookie's purpose or duration changes, the diagnostic, checkout or email system changes, legal requirements or regulatory guidance change, or the website begins using analytics, advertising or embedded content not previously disclosed.</p>
+<p>This Cookies Policy may be updated when a technology is added or removed, a provider changes, a cookie's purpose or duration changes, the checkout or email system changes, legal requirements or regulatory guidance change, or the website begins using analytics, advertising or embedded content not previously disclosed.</p>
 
 <p>The updated version and revision date will appear on this page. Where a new use requires consent, it will not begin until the required choice has been obtained.</p>
 
