@@ -13,7 +13,7 @@ export default function JoinPage() {
         takes you to the sign-up page — it only takes a moment.
       </p>
       <div className="form-shell">
-        <a href="https://manojtailor-com-2.kit.com/6e715f8c18" className="join-cta">
+        <a href="https://join.manojtailor.com" className="join-cta">
           I&apos;m In →
         </a>
       </div>

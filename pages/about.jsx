@@ -8,9 +8,6 @@ export default function AboutPage() {
       </Head>
       <p className="eyebrow">About</p>
       <h1>The One-Eyed Marksman</h1>
-      <div className="photo-frame">
-        <img src="/manoj-photo.png" alt="Manoj Tailor" />
-      </div>
       <div
         dangerouslySetInnerHTML={{ __html: `<p>So here is the part that makes no sense until it does.</p>
 

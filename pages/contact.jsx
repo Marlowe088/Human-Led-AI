@@ -8,13 +8,10 @@ export default function ContactPage() {
       </Head>
       <p className="eyebrow">Contact</p>
       <h1>Get in Touch</h1>
-      <div className="photo-frame">
-        <img src="/manoj-photo.png" alt="Manoj Tailor" />
-      </div>
       <div
         dangerouslySetInnerHTML={{ __html: `<p>You're welcome to send me a message.</p>
 
-<p>It doesn't need to be formal, and you don't need to arrive with a perfectly formed question. A clear, honest note is enough. I read every genuine message myself — though I can't always promise a reply in depth.</p>
+<p>It doesn't need to be formal, and you don't need to arrive with a perfectly formed question. A clear, honest note is enough. I read every message.</p>
 
 <p><strong>What to write to me about</strong>.</p>
 
