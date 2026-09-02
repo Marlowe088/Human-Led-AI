@@ -16,6 +16,12 @@ export default function JoinPage() {
         <a href="https://join.manojtailor.com" className="join-cta">
           I&apos;m In →
         </a>
+        <p className="fallback-note">
+          If the button above doesn&apos;t take you through — sometimes an ad
+          blocker or browser setting is the cause — you can use{' '}
+          <a href="https://letters.manojtailor.com">this alternative link</a>{' '}
+          instead.
+        </p>
       </div>
     </>
   );

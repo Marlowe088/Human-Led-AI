@@ -283,6 +283,18 @@ hr.rule {
   opacity: 0.88;
 }
 
+.fallback-note {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.fallback-note a {
+  color: var(--indigo);
+  text-decoration: underline;
+}
+
 /* Home page intro block (title + tagline) stays centered, matching original */
 .page-home h3:first-of-type {
   text-align: center;
