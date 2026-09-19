@@ -260,12 +260,139 @@ hr.rule {
   font-size: 15px;
 }
 
+/* ---------- Diagnostic answer options ---------- */
+.question-prompt {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.3;
+  margin: 0 0 var(--space-3);
+}
+
+.options-list {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 14px 16px;
+  margin: 0 0 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.option-btn:hover {
+  border-color: var(--accent);
+}
+
+.option-btn.selected {
+  background: var(--accent-tint);
+  border-color: var(--accent);
+}
+
+.option-letter {
+  color: var(--ink-muted);
+  margin-right: 8px;
+}
+
+.back-link {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 15px;
+  color: var(--ink-muted);
+  cursor: pointer;
+  margin: 0 0 var(--space-3);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+/* ---------- Checkboxes ---------- */
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 var(--space-2);
+}
+
+.checkbox-row input[type='checkbox'] {
+  margin-top: 4px;
+  width: 17px;
+  height: 17px;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+
+.checkbox-row label {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.checkbox-row label a {
+  color: var(--accent);
+}
+
+/* ---------- CTA disabled state ---------- */
+.cta[disabled] {
+  background: var(--border);
+  border-color: var(--border);
+  color: var(--ink-muted);
+  cursor: not-allowed;
+}
+
+.cta[disabled]:hover {
+  background: var(--border);
+  border-color: var(--border);
+}
+
+.cta-row {
+  margin: var(--space-4) 0;
+}
+
+/* ---------- Quote / Old Map ---------- */
+blockquote.old-map {
+  margin: var(--space-2) 0;
+  padding: 12px var(--space-3);
+  border-left: 2px solid var(--accent);
+  font-style: italic;
+  color: var(--ink);
+}
+
+/* ---------- Meta / trust line ---------- */
+.meta-line {
+  font-size: 14px;
+  color: var(--ink-muted);
+  margin: 0 0 var(--space-3);
+}
+
 @media (max-width: 640px) {
   main h1 {
     font-size: 32px;
   }
   main h2 {
     font-size: 25px;
+  }
+  .question-prompt {
+    font-size: 22px;
   }
   .site-header {
     padding: 28px 24px 20px;
