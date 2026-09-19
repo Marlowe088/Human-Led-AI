@@ -1,199 +1,133 @@
 import Head from 'next/head';
+import LegalSections from '../components/LegalSections';
+
+const SECTIONS = [
+  {
+    number: 1,
+    title: 'A Clear Starting Point.',
+    html: `<p>This website is designed to support reflection, meaning, purpose, identity, discernment, and practical self-understanding. It is not intended to tell you what to do, is not a substitute for professional advice, and does not remove your personal responsibility for your own choices and outcomes.</p>`,
+  },
+  {
+    number: 2,
+    title: 'Informational and Educational Purposes Only.',
+    html: `<p>All content &mdash; website pages, the Purpose Path&trade; Diagnostic, the Meaning Map&trade; report, and any future digital products &mdash; is provided for informational, educational, reflective, and personal development purposes only. It is not professional advice.</p>`,
+  },
+  {
+    number: 3,
+    title: 'No Professional Advice.',
+    html: `<p>Nothing on this website constitutes legal, financial, medical, psychological, therapeutic, or business advice, counselling, diagnosis, crisis support, or religious instruction. If you need any of these, consult an appropriately qualified professional.</p>`,
+  },
+  {
+    number: 4,
+    title: 'Not Therapy, Counselling, or Mental Health Support.',
+    html: `<p>This material is not therapy, counselling, psychological treatment, or mental health support, and does not diagnose, treat, cure, or prevent any mental health condition. If you&rsquo;re experiencing serious emotional distress, crisis, or thoughts of self-harm, seek immediate help from an appropriate professional, emergency service, or crisis support provider in your country.</p>`,
+  },
+  {
+    number: 5,
+    title: 'Personal Responsibility.',
+    html: `<p>You remain responsible for how you interpret and apply any material from this website, including your decisions, actions, and any outcomes resulting from them. The material offers frameworks, reflections, and prompts &mdash; it does not make decisions for you or replace your own judgment.</p>`,
+  },
+  {
+    number: 6,
+    title: 'No Guarantees.',
+    html: `<p>No specific outcome is guaranteed. Completing the diagnostic or purchasing the Meaning Map&trade; does not guarantee finding your purpose, achieving clarity, improving relationships, or any other specific personal or professional result. Results will vary.</p>`,
+  },
+  {
+    number: 7,
+    title: 'No Guarantee of &ldquo;Correct&rdquo; Decisions.',
+    html: `<p>This material may support decision clarity and self-reflection, but it does not guarantee that any decision you make will be correct, successful, or favourable in hindsight. Life involves uncertainty and consequences outside your control.</p>`,
+  },
+  {
+    number: 8,
+    title: 'The Purpose Path Diagnostic&trade;.',
+    html: `<p>This tool is not a clinical, medical, psychological, or scientific assessment. It&rsquo;s intended to support self-reflection and orientation. Any result should be treated as a reflective prompt &mdash; not a fixed identity, diagnosis, or final verdict on your life.</p>`,
+  },
+  {
+    number: 9,
+    title: 'The Meaning Map&trade;.',
+    html: `<p>The Meaning Map&trade; is a personal written report, built from your diagnostic answers, designed for educational and reflective purposes. It may help you understand the pattern currently shaping your decisions, what it&rsquo;s likely costing you, and one honest next step &mdash; but it does not guarantee a specific outcome, and it is not therapy, medical care, legal advice, or religious instruction. Your use of it remains your responsibility.</p>`,
+  },
+  {
+    number: 10,
+    title: 'AI-Assisted Material.',
+    html: `<p>Some content or diagnostic scoring may involve AI-assisted tools. This can be useful but may contain errors or interpretations that don&rsquo;t apply to your situation. You should not rely on it as a substitute for your own judgment or professional advice.</p>`,
+  },
+  {
+    number: 11,
+    title: 'Accuracy, Completeness, and Suitability.',
+    html: `<p>Reasonable care is taken to keep content accurate and useful, but no warranty is made that it&rsquo;s complete, current, or error-free. Content may be updated or changed at any time.</p>`,
+  },
+  {
+    number: 12,
+    title: 'External Factors.',
+    html: `<p>Personal, professional, and life outcomes are influenced by many factors outside the scope of this website &mdash; your circumstances, health, relationships, and choices among them. These are outside our control.</p>`,
+  },
+  {
+    number: 13,
+    title: 'Testimonials, Examples, and Stories.',
+    html: `<p>Any testimonials or examples shared are individual experiences, not guarantees of similar results.</p>`,
+  },
+  {
+    number: 14,
+    title: 'Third-Party Links and Services.',
+    html: `<p>This website may link to or use third-party services (including Stripe, Kit, and Vercel). We don&rsquo;t control these services and aren&rsquo;t responsible for their content, availability, or practices. Use of third-party services is at your own discretion.</p>`,
+  },
+  {
+    number: 15,
+    title: 'Digital Products and Consumer Rights.',
+    html: `<p>The Meaning Map&trade; is delivered digitally, shortly after purchase. Nothing in this Disclaimer removes or reduces your statutory rights under applicable consumer law. Refunds and cancellations are handled per the Terms of Use and Refund Policy.</p>`,
+  },
+  {
+    number: 16,
+    title: 'Privacy, Cookies, and Data.',
+    html: `<p>Your use of this website may involve the collection of personal data, as explained in the Privacy Policy, and cookies as explained in the Cookies Policy.</p>`,
+  },
+  {
+    number: 17,
+    title: 'Limitation of Liability.',
+    html: `<p>To the fullest extent permitted by law, Manoj Tailor and manojtailor.com are not liable for loss arising from use of this website, reliance on its content, or third-party services, including financial loss, loss of opportunity, or indirect loss. Nothing here excludes liability that cannot legally be excluded, including for death or personal injury caused by negligence, fraud, or statutory rights that cannot be excluded.</p>`,
+  },
+  {
+    number: 18,
+    title: 'No Warranties.',
+    html: `<p>All content and products are provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; with no warranty of fitness for a particular purpose, reliability, or error-free operation.</p>`,
+  },
+  {
+    number: 19,
+    title: 'Global Use and Jurisdiction.',
+    html: `<p>This website is operated from the United Kingdom but may be accessed globally. This Disclaimer is governed by the laws of England and Wales, subject to any mandatory consumer rights that apply in your jurisdiction.</p>`,
+  },
+  {
+    number: 20,
+    title: 'Relationship With Other Policies.',
+    html: `<p>This Disclaimer should be read alongside the Terms of Use, Privacy Policy, and Refund Policy. Where there&rsquo;s a conflict with any mandatory legal right you have, your legal right applies.</p>`,
+  },
+  {
+    number: 21,
+    title: 'Changes to This Disclaimer.',
+    html: `<p>This Disclaimer may be updated from time to time. The latest version is always available here.</p>`,
+  },
+  {
+    number: 22,
+    title: 'Contact.',
+    html: `<p>Email: <a href="mailto:manoj@manojtailor.com">manoj@manojtailor.com</a></p>`,
+  },
+  {
+    number: 23,
+    title: 'Final Note.',
+    html: `<p>This website is designed to support clearer thinking and deeper reflection &mdash; not to remove uncertainty, make decisions for you, or replace professional advice. It offers language, questions, and frameworks that may help you engage more consciously with your own life. Responsibility for your life remains with you.</p>`,
+  },
+];
 
 export default function DisclaimerPage() {
   return (
     <>
       <Head>
-        <title>Disclaimer — Human-Led AI</title>
+        <title>Disclaimer — Manoj Tailor</title>
       </Head>
       <h1 className="legal-title">Disclaimer.</h1>
-      <div
-        dangerouslySetInnerHTML={{ __html: `<p><strong>manojtailor.com — Human-Led AI</strong></p>
-
-<p>Last updated: August 2026</p>
-
-<p><strong>1. Purpose of this Disclaimer</strong>.</p>
-
-<p>This Disclaimer explains the scope and limitations of the information, emails, digital resources and services provided through manojtailor.com.</p>
-
-<p>This website explores <strong>Human-Led AI</strong> — its purpose is to support clearer thinking about how people can use increasingly capable artificial intelligence while retaining meaningful human judgement, agency and responsibility.</p>
-
-<p>The material may help you ask better questions, examine assumptions, identify what deserves verification, understand how AI is influencing a decision, clarify human responsibilities and trade-offs, and consider a more defensible next move.</p>
-
-<p>It is not intended to make decisions for you or remove the need for appropriate professional advice.</p>
-
-<p><strong>2. Educational and informational material</strong>.</p>
-
-<p>Unless a separate written agreement expressly states otherwise, all material provided through this website is for educational, informational and reflective purposes.</p>
-
-<p>The material provides general principles and questions. It cannot take account of every fact, obligation, risk, relationship or consequence within your individual circumstances.</p>
-
-<p><strong>3. Not professional advice</strong>.</p>
-
-<p>Nothing provided through this website constitutes individual legal advice, financial or investment advice, tax advice, medical or healthcare advice, mental-health treatment, therapy or counselling, crisis support, employment-law advice, human-resources advice, cybersecurity advice, data-protection advice, safeguarding advice, regulated professional advice, or specialist technical or engineering advice.</p>
-
-<p>General discussion of these subjects does not create a professional adviser-client relationship. Where a decision requires specialist knowledge, formal assessment or regulated advice, consult an appropriately qualified professional who understands your circumstances.</p>
-
-<p><strong>4. Not an emergency or crisis service</strong>.</p>
-
-<p>This website, its contact form and its email address are not monitored as an emergency, safeguarding or crisis-support service.</p>
-
-<p>Do not rely upon this website where someone is in immediate danger, urgent medical assistance is required, you are experiencing a mental-health crisis, a child or vulnerable person may be at risk, immediate legal or financial protection is required, or a security incident requires urgent specialist intervention.</p>
-
-<p>Contact the relevant emergency service, qualified professional or recognised support organisation in your location.</p>
-
-<p><strong>5. Human judgement remains necessary</strong>.</p>
-
-<p>The purpose of this work is to support human led judgement, not replace it.</p>
-
-<p>No website page, AI output, framework or workbook can know your full circumstances, determine your values, understand every affected person, guarantee a future outcome, assume your legal or professional responsibilities, or accept the consequences of your decision.</p>
-
-<p>You remain responsible for deciding what information is relevant, checking material claims, obtaining specialist advice where needed, protecting confidential information, interpreting the material, determining whether it is suitable, deciding what action to take, and accepting the trade-offs involved.</p>
-
-<p>The existence of a framework does not remove uncertainty or transfer responsibility.</p>
-
-<p><strong>6. Decisions under uncertainty</strong>.</p>
-
-<p>Many decisions involve incomplete information, conflicting evidence, changing conditions, competing values, several plausible options, and consequences outside anyone's control.</p>
-
-<p>The material may help improve the process used to reach a judgement. It cannot guarantee that a decision will produce a favourable result, that an unforeseen event will not occur, that another person will agree or cooperate, that all risks will be identified, or that the judgement will appear correct in hindsight.</p>
-
-<p>A carefully made decision can still produce an unfavourable outcome. A favourable outcome can also follow from a weak decision process. The quality of the decision and the eventual outcome should not automatically be treated as the same thing.</p>
-
-<p><strong>7. AI-assisted material</strong>.</p>
-
-<p>Artificial intelligence may support parts of the research, analysis, drafting, organisation, editing, personalisation, and product development.</p>
-
-<p>AI-assisted material can contain errors, omissions, fabricated details, outdated information, unsupported confidence, biased framing, incomplete reasoning, and interpretations that do not fit your situation.</p>
-
-<p>Reasonable human review may reduce these risks but cannot eliminate them completely. Verify important factual, legal, financial, medical, technical or professional information through appropriate current and authoritative sources.</p>
-
-<p><strong>8. Third-party AI tools</strong>.</p>
-
-<p>The website may discuss or refer to third-party AI tools, platforms, models or services. A reference does not guarantee that a tool is accurate, secure, lawful for your intended use, appropriate for confidential information, compliant with your employer's rules, suitable for a regulated setting, available in your country, or unchanged since it was discussed.</p>
-
-<p>Third-party tools may change their features, outputs, terms, prices, privacy practices, data-retention policies, security arrangements, or availability.</p>
-
-<p>Before using an AI tool, consider the relevant privacy implications, confidentiality obligations, intellectual-property rights, professional standards, employer or client policies, data-protection duties, and safety and security requirements.</p>
-
-<p>Do not submit confidential, personal, proprietary or legally protected information unless you are authorised to do so and understand how the provider may process it.</p>
-
-<p><strong>9. Accuracy and currency</strong>.</p>
-
-<p>Reasonable care is taken in preparing the material. However, no representation is made that every page, email or resource will always be complete, error-free, current, suitable for every jurisdiction, appropriate for your circumstances, or compatible with every platform or device.</p>
-
-<p>Artificial intelligence, technology, law, regulation and professional practice can change quickly. A publication or revision date does not guarantee that every external fact remains current after that date. Material may be corrected, updated, expanded or removed.</p>
-
-<p>For a consequential decision, verify relevant information using current primary or authoritative sources.</p>
-
-<p><strong>10. Interpretation and opinion</strong>.</p>
-
-<p>Some content on this website contains analysis, interpretation, opinion, forecasts, scenarios, philosophical argument, and practical judgement.</p>
-
-<p>These should not be confused with established facts merely because they are expressed confidently. Where possible, evidence, interpretation and personal judgement will be distinguished. However, readers may reasonably interpret the same subject differently. Discussion of the future effects of AI is inherently uncertain and should not be treated as a guaranteed prediction.</p>
-
-<p><strong>11. Human judgement is not infallible</strong>.</p>
-
-<p>The website's commitment to Human-Led AI does not mean that human judgement is always superior to machine analysis.</p>
-
-<p>Human decisions may be affected by bias, fatigue, fear, incentives, group pressure, overconfidence, limited information, conflicts of interest, emotion, and habit. AI may sometimes improve a decision by revealing information, testing assumptions or applying rules more consistently.</p>
-
-<p>The aim is not to privilege either humans or machines automatically. It is to allocate their roles proportionately while keeping responsibility, verification and authority clear.</p>
-
-<p><strong>12. No guaranteed outcomes</strong>.</p>
-
-<p>Unless a specific written product guarantee expressly states otherwise, no particular outcome is guaranteed from reading the website, joining the email list, purchasing a resource, applying a framework, participating in a guided process, or acting upon a question or example.</p>
-
-<p>In particular, I do not guarantee that you will make the correct decision, eliminate uncertainty, avoid every mistake, reduce every risk, preserve a job or business, increase income or productivity, improve a relationship, achieve a particular level of confidence, obtain approval from another person, avoid technological disruption, complete or apply the material successfully, or receive a favourable result.</p>
-
-<p>Any product-specific promise or voluntary guarantee will be explained separately before purchase. Such a guarantee does not remove exclusions, qualifying conditions or statutory consumer rights.</p>
-
-<p><strong>13. Examples, cases and testimonials</strong>.</p>
-
-<p>Examples and cases may be drawn from real experiences, anonymised, simplified, combined from recurring patterns, or created as hypothetical illustrations. A hypothetical example should be identified as such where this is not already clear from its context.</p>
-
-<p>Testimonials and case studies reflect individual experiences. They do not guarantee that another person will achieve the same result. Results depend upon circumstances, decisions, implementation and external factors.</p>
-
-<p><strong>14. Reader messages and general responses</strong>.</p>
-
-<p>A response to a contact-form message or email is normally general information rather than individual professional advice. A brief exchange cannot reasonably establish all relevant facts, the reliability of supplied information, material legal or professional obligations, the interests of other affected people, or every possible consequence.</p>
-
-<p>Sending a message does not create a client relationship, a professional duty of care beyond any duty imposed by law, an obligation to provide ongoing guidance, or acceptance of responsibility for your decision.</p>
-
-<p>Do not send highly sensitive, confidential or privileged information unless specifically requested through an appropriate secure process.</p>
-
-<p><strong>15. Private sessions or guided support</strong>.</p>
-
-<p>Where a paid offer includes a private session, guided review or personalised feedback, the scope will be described before purchase.</p>
-
-<p>Unless a separate written agreement expressly states otherwise, such support remains educational and reflective, does not become regulated professional advice, does not guarantee a particular decision or outcome, does not transfer responsibility for implementation, and is limited to the described product or session.</p>
-
-<p>A private interaction does not create an indefinite advisory relationship. Any important limitations, preparation requirements or exclusions should be stated in the product-specific information.</p>
-
-<p><strong>16. External links and third-party services</strong>.</p>
-
-<p>The website may link to or use third-party websites, research, publications, tools, payment providers, form providers, email platforms, video or audio services, AI systems, and other resources.</p>
-
-<p>A link or reference does not necessarily mean that I endorse every statement made by the third party, all of its products, its future conduct, or its privacy or security practices. Third-party material and services operate under their own terms and policies. I do not control their independent content, security, availability or processing practices. Use them with appropriate care.</p>
-
-<p><strong>17. Purchases and statutory rights</strong>.</p>
-
-<p>Paid digital content and services are subject to the Terms of Use, the relevant product description, checkout information, any product-specific terms, and applicable consumer law.</p>
-
-<p>Nothing in this Disclaimer excludes, restricts or replaces a statutory right or remedy that cannot lawfully be excluded. This includes rights that may apply where paid digital content is faulty or not as described, or where a paid service is not provided with reasonable care and skill. A Disclaimer does not remove the obligation to supply what was promised.</p>
-
-<p><strong>18. Liability</strong>.</p>
-
-<p>Nothing in this Disclaimer excludes or limits liability where doing so would be unlawful. This includes liability that cannot lawfully be excluded for matters such as death or personal injury caused by negligence, fraud or fraudulent misrepresentation, breach of mandatory consumer rights, and any other liability that applicable law does not permit to be excluded.</p>
-
-<p>Subject to those protections, I am not responsible for loss caused solely by treating general educational material as individual professional advice; failing to verify an important claim; providing materially inaccurate or incomplete information; applying material outside its stated scope; misusing a resource; using a third-party platform outside my reasonable control; ignoring applicable laws, policies or professional obligations; or sharing paid or confidential material without authorisation.</p>
-
-<p>Any limitation of liability will apply only so far as it is fair, reasonable and legally enforceable.</p>
-
-<p><strong>19. Website availability</strong>.</p>
-
-<p>Reasonable efforts are made to keep the website and digital materials available. Access may occasionally be interrupted by maintenance, security work, hosting failures, software updates, third-party outages, internet disruption, or events beyond reasonable control.</p>
-
-<p>Free website pages, essays and newsletters may be revised, paused or withdrawn. The handling of paid access will remain subject to the purchase agreement and applicable consumer rights.</p>
-
-<p><strong>20. Global access</strong>.</p>
-
-<p>This website is operated from the United Kingdom and may be accessed globally. Information provided here is general and may not reflect local law, regulation, professional practice, cultural context, institutional requirements, or available support services.</p>
-
-<p>If you access or purchase from another country, consider whether local requirements apply to your intended use. The Terms of Use explain the governing law and jurisdiction applying to the website and purchases, subject to mandatory rights that may apply where you live.</p>
-
-<p><strong>21. Relationship with other legal pages</strong>.</p>
-
-<p>This Disclaimer should be read alongside the Terms of Use, Privacy Policy, Cookies Policy, product-specific terms, checkout information, and any separate written agreement.</p>
-
-<p>The Terms of Use govern matters such as permitted use, intellectual property, purchases, digital access, refunds, consumer rights, liability, and governing law. The Privacy and Cookies Policies explain how information and website technologies are handled.</p>
-
-<p>Where a mandatory legal right conflicts with this Disclaimer, the mandatory right applies.</p>
-
-<p><strong>22. Changes to this Disclaimer</strong>.</p>
-
-<p>This Disclaimer may be updated to reflect changes in the website, products or services, AI-assisted practices, legal or regulatory requirements, or the subjects covered.</p>
-
-<p>The current version and last-updated date will be published on this page. The Disclaimer applying to a completed purchase should be read together with the terms and product description provided when that purchase was made.</p>
-
-<p><strong>23. Contact</strong>.</p>
-
-<p>Questions about this Disclaimer can be sent to:</p>
-
-<p>Manoj Tailor Website: manojtailor.com Email: manoj@manojtailor.com</p>
-
-<p>Do not include unnecessary sensitive or confidential information.</p>
-
-<p><strong>24. Final note</strong>.</p>
-
-<p>This website exists to support clearer human judgement in a world increasingly shaped by artificial intelligence.</p>
-
-<p>It does not exist to remove every uncertainty. It cannot decide which consequences you should accept. It cannot assume your legal, professional or personal responsibilities.</p>
-
-<p>It can offer better questions, useful distinctions, structured reflection, practical frameworks, and support for more deliberate judgement.</p>
-
-<p>The responsibility to understand, verify, decide and act remains human. Use AI and the material on this site as support for judgement — not as a substitute for it.</p>` }}
-      />
+      <p className="caption">manojtailor.com &middot; Last updated: September 2026.</p>
+      <LegalSections sections={SECTIONS} />
     </>
   );
 }

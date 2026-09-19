@@ -10,6 +10,7 @@ export default function Footer() {
           <Link href="/contact">Contact</Link>
           <Link href="/terms-of-use">Terms of Use</Link>
           <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/refund-policy">Refund Policy</Link>
           <Link href="/cookie-policy">Cookies Policy</Link>
           <Link href="/disclaimer">Disclaimer</Link>
         </div>

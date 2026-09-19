@@ -1,70 +1,91 @@
+import { useState } from 'react';
 import Head from 'next/head';
 
 export default function ContactPage() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  function sendMessage(e) {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Message from ${name || 'the site'}`);
+    const body = encodeURIComponent(`${message}\n\n—\n${name}\n${email}`);
+    window.location.href = `mailto:manoj@manojtailor.com?subject=${subject}&body=${body}`;
+  }
+
   return (
     <>
       <Head>
-        <title>Contact — Human-Led AI</title>
+        <title>Contact — Manoj Tailor</title>
       </Head>
-      <p className="eyebrow">Contact</p>
-      <h1>Get in Touch</h1>
-      <div
-        dangerouslySetInnerHTML={{ __html: `<p>You're welcome to send me a message.</p>
 
-<p>It doesn't need to be formal, and you don't need to arrive with a perfectly formed question. A clear, honest note is enough. I read every message.</p>
+      <h1>Contact.</h1>
 
-<p><strong>What to write to me about</strong>.</p>
+      <p className="lede">Get in touch.</p>
 
-<p>Get in touch if something here resonated, if you have a question about AI, judgment, or where the line between the two sits for you. If AI is changing how you decide things, and you want to think it through out loud with someone. If something on the site was wrong, unclear, or worth challenging — thoughtful disagreement is genuinely welcome here, not just tolerated. Or if you have a question about something you've bought, or a media or collaboration enquiry.</p>
+      <p>The simplest way is to send a message below. I read every one.</p>
 
-<p>You don't need to agree with everything I've written to write to me. Some of my favourite replies start with "I don't think that's quite right."</p>
+      <p>You don&rsquo;t need to write anything formal. You don&rsquo;t need to have the perfect question. Just say what you need to say.</p>
 
-<p><strong>Before you write</strong>.</p>
+      <h3>What to get in contact about.</h3>
 
-<p>New here? The <strong>Manifesto</strong> is the best place to start — it's the thinking underneath everything else on this site.</p>
+      <p>You&rsquo;re welcome to message me if:</p>
+      <ul>
+        <li>something on the site resonated with you</li>
+        <li>you&rsquo;re unsure whether this work speaks to your situation</li>
+        <li>you have a thoughtful question around meaning, purpose, identity, discernment, or inner orientation</li>
+        <li>you&rsquo;ve taken the Purpose Path Diagnostic&trade; and want to share what came up</li>
+        <li>you noticed something that may be useful for me to know</li>
+      </ul>
 
-<p><strong><a href="/manifesto">Read the Manifesto →</a></strong></p>
+      <p>You don&rsquo;t need a polished message. Sometimes a simple, honest note is enough.</p>
 
-<p>If you'd rather receive it in your inbox, join <strong>"Human-Led AI Letters</strong>." New readers start with a short seven-day series — no selling in it, just the ideas continued. After that, a weekly letter, and the option to hear about anything further if you ever want it. Not an AI news roundup. A quieter place to think.</p>
+      <h3>Send a message.</h3>
 
-<p><strong><a href="/join">Join Human-Led AI Letters →</a></strong></p>
+      <form onSubmit={sendMessage}>
+        <label className="caption" htmlFor="contact-name">Name</label>
+        <input
+          id="contact-name"
+          className="form-field"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          autoComplete="name"
+        />
 
-<p><strong>Send a message</strong></p>
+        <label className="caption" htmlFor="contact-email">Email</label>
+        <input
+          id="contact-email"
+          className="form-field"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          autoComplete="email"
+        />
 
-<p>You can reach me directly at:</p>
+        <label className="caption" htmlFor="contact-message">Message</label>
+        <textarea
+          id="contact-message"
+          className="form-field"
+          rows={6}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
 
-<p><strong>manoj@manojtailor.com</strong></p>
+        <div className="cta-row">
+          <button type="submit" className="cta">Send Message</button>
+        </div>
+      </form>
 
-<p>By writing to me, you're agreeing that I can use what you send to read, manage, and respond to it. For how I handle that information more broadly, see the <strong><a href="/privacy-policy">Privacy Policy.</a></strong></p>
+      <p>
+        If you&rsquo;ve been thinking about reaching out, there may be a reason. You don&rsquo;t
+        need to explain your whole life. You don&rsquo;t need to make it perfect. You don&rsquo;t
+        need to sound certain.
+      </p>
 
-<p><strong>One practical ask</strong>.</p>
+      <p>Just start from where you are.</p>
 
-<p>Please don't send anything sensitive through email or a contact form — this includes medical details, banking or payment information, passwords, confidential legal documents, or private details about someone else who hasn't agreed to share them.</p>
-
-<p>You're welcome to describe the shape of a decision or situation without the specifics. If you're writing about something you've purchased, just enough detail to identify it is plenty.</p>
-
-<p><strong>What this is, and isn't</strong>.</p>
-
-<p>I read genuine messages carefully, but I can't guarantee a response, and reply times will vary. Writing to me doesn't create a professional or advisory relationship, and I can't take responsibility for a decision based on a single email exchange.</p>
-
-<p>Everything on this site, and anything I write back to you, is offered as thinking — not as legal, financial, medical, or other regulated professional advice. Where a situation genuinely needs a specialist, please seek one.</p>
-
-<p><strong>If you are in crisis or immediate danger, please don't use this page.</strong> Contact your local emergency service, a healthcare provider, or a relevant support organisation directly.</p>
-
-<p><strong>Where I'm based</strong>.</p>
-
-<p>I'm based in the United Kingdom. This site is written for thoughtful readers wherever they are, though laws and professional standards do differ by country — worth bearing in mind if anything here touches a regulated area of your life.</p>
-
-<p><strong>Last thing</strong>.</p>
-
-<p>An unfinished question is still worth asking.</p>
-
-<p>You don't need to sound certain. You don't need to explain everything at once.</p>
-
-<p>Start with whatever matters most.</p>
-
-<p><strong>Manoj Tailor</strong><br>Human-Led AI<br>Clear. Capable. Human.</p>` }}
-      />
+      <p><strong>~ Manoj.</strong></p>
     </>
   );
 }
