@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-  --bg: #f0eee9;
-  --bg-alt: #eae7e0;
+  --bg: #f5f3ee;
+  --bg-alt: #efece5;
   --ink: #2a2420;
   --ink-muted: #6b6259;
   --accent: #2e3350;
@@ -48,6 +48,15 @@ a {
 
 a:hover {
   color: var(--accent-hover);
+}
+
+sup.tm {
+  font-size: 0.5em;
+  vertical-align: top;
+  position: relative;
+  top: -0.15em;
+  margin-left: 1px;
+  font-weight: 400;
 }
 
 /* Skip link for keyboard users */
@@ -175,7 +184,7 @@ main th {
 
 hr.rule {
   border: none;
-  border-top: 1px solid var(--border);
+  border-top: 3px solid #000000;
   margin: var(--space-6) 0;
 }
 
@@ -184,6 +193,15 @@ hr.rule {
   line-height: 1.55;
   color: var(--ink);
   margin: 0 0 var(--space-4);
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .lede {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .caption {
@@ -236,7 +254,8 @@ hr.rule {
 
 .site-footer a {
   font-size: 14px;
-  color: var(--ink-muted);
+  font-weight: 700;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -246,7 +265,8 @@ hr.rule {
 
 .site-footer .byline {
   font-size: 14px;
-  color: var(--ink-muted);
+  font-weight: 700;
+  color: #000000;
 }
 
 /* ---------- Diagnostic progress indicator ---------- */
@@ -407,6 +427,27 @@ blockquote.old-map {
   border-left: 2px solid var(--accent);
   font-style: italic;
   color: var(--ink);
+}
+
+blockquote.pull-quote {
+  margin: var(--space-4) 0;
+  padding: 4px 0 4px var(--space-4);
+  border-left: 3px solid var(--accent);
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.pull-quote-cite {
+  display: block;
+  margin-top: var(--space-2);
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink-muted);
 }
 
 /* ---------- Meta / trust line ---------- */

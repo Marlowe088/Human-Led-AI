@@ -298,7 +298,7 @@ export default function DiagnosticPage() {
       {/* ---------------- Questions ---------------- */}
       {step < totalQuestions && (
         <>
-          <h1>The Purpose Path™ Diagnostic.</h1>
+          <h1>The Purpose Path<sup className="tm">™</sup> Diagnostic.</h1>
           <p className="lede">
             For each question, choose the answer that feels most true in this chapter of your
             life. Not what sounds most impressive. Not what others expect of you.
@@ -385,7 +385,7 @@ export default function DiagnosticPage() {
                 onChange={(e) => setSendUpdates(e.target.checked)}
               />
               <label htmlFor="df-consent-optional">
-                Also send me occasional emails from Manoj about The Meaning Map™ and this
+                Also send me occasional emails from Manoj about The Meaning Map<sup className="tm">™</sup> and this
                 work. I can unsubscribe any time — see the{' '}
                 <a href="/privacy-policy">Privacy Policy</a> for how your data is used.
               </label>
@@ -491,7 +491,7 @@ export default function DiagnosticPage() {
                 By purchasing, you agree to receive immediate access to this digital product. You
                 understand that once access begins, your statutory cancellation rights may be
                 affected, except where the product is faulty, inaccessible, or not as described.
-                The Meaning Map™ is also covered by the 14-day guarantee described on this
+                The Meaning Map<sup className="tm">™</sup> is also covered by the 14-day guarantee described on this
                 page.
               </label>
             </div>

@@ -1,14 +1,20 @@
-<svg viewBox="0 0 210 34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manoj Tailor">
+<svg viewBox="0 0 220 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manoj Tailor">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&amp;display=swap');
       .name {
         font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 26px;
-        fill: #2A2420;
+        fill: #000000;
+      }
+      .accent-l {
+        fill: #2e3350;
       }
     </style>
   </defs>
-  <text x="0" y="25" class="name">Manoj Tailor</text>
+  <text y="25" class="name">
+    <tspan x="0">MANOJ TAI</tspan><tspan x="155.18" class="accent-l">L</tspan><tspan x="172.04">OR</tspan>
+  </text>
+  <rect x="0" y="30" width="213.39" height="3" fill="#2e3350" />
 </svg>

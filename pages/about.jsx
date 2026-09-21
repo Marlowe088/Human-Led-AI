@@ -119,6 +119,34 @@ export default function AboutPage() {
         Without superiority.
       </p>
 
+      <p>
+        I recognise that you may not know me, and that I&rsquo;m asking you to trust me. I want
+        to reassure you that I take that very seriously.
+      </p>
+
+      <p>
+        So to break the ice between us a little more, let me tell you why I think you should
+        listen to what I have to say. I&rsquo;d like to share what my mentor and friend says
+        about me:
+      </p>
+
+      <blockquote className="pull-quote">
+        &ldquo;Manoj is wholly responsible for introducing me to the Bhagavad Gita. My life has
+        changed dramatically and for the better, because of this beautiful man and his ordained
+        guidance on Lord Krishna. I feel grateful to have Manoj as a friend.&rdquo;
+        <span className="pull-quote-cite">Geoff Thompson &mdash; BAFTA Award-winning writer of over 40 books, published in over 21 languages</span>
+      </blockquote>
+
+      <p>But who is Geoff Thompson, you ask? I&rsquo;ll let Guy Ritchie explain.</p>
+
+      <blockquote className="pull-quote">
+        Guy Ritchie, of <em>Lock, Stock and Two Smoking Barrels</em> and <em>Snatch</em> fame,
+        once said that Geoff Thompson is a &ldquo;spiritual troublemaker&rdquo; &mdash; because he
+        has taken his practice outside the safety of theology and tested it in the practical
+        crucible of the competitive world.
+        <span className="pull-quote-cite">From the back cover of <em>The Divine CEO</em> by Geoff Thompson</span>
+      </blockquote>
+
       <h3>Why the Age of AI Matters.</h3>
 
       <p>
@@ -160,9 +188,9 @@ export default function AboutPage() {
         fits. To take one honest next step.
       </p>
 
-      <h3>Why The Meaning Map&trade; Exists.</h3>
+      <h3>Why The Meaning Map<sup className="tm">™</sup> Exists.</h3>
 
-      <p>The Meaning Map&trade; is the first practical doorway into this work.</p>
+      <p>The Meaning Map<sup className="tm">™</sup> is the first practical doorway into this work.</p>
 
       <p>
         It exists because a lot of thoughtful people aren&rsquo;t short of information.
@@ -173,7 +201,7 @@ export default function AboutPage() {
       <p>And they still feel a quiet lack of orientation.</p>
 
       <p>
-        The Meaning Map&trade; is a short diagnostic, followed by a free short personal written
+        The Meaning Map<sup className="tm">™</sup> is a short diagnostic, followed by a free short personal written
         report &mdash; built from your specific answers, not a generic template &mdash; that
         names which pattern is currently running your life and your daily decisions, what
         it&rsquo;s likely costing you without your noticing, and the one honest next step you may
@@ -221,13 +249,13 @@ export default function AboutPage() {
 
       <p>
         If this has named something you&rsquo;ve been feeling, the best place to start is the
-        Meaning Map&trade; &mdash; a short diagnostic that identifies the pattern most alive in
+        Meaning Map<sup className="tm">™</sup> &mdash; a short diagnostic that identifies the pattern most alive in
         your life right now.
       </p>
 
       <p style={{ marginTop: 'var(--space-2)' }}>
         <Link href="/diagnostic" className="cta">
-          Find Your Meaning Map&trade; →
+          Find Your Meaning Map<sup className="tm">™</sup> →
         </Link>
       </p>
 

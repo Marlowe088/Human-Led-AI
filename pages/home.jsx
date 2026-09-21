@@ -12,13 +12,15 @@ export default function HomePage() {
         />
       </Head>
 
-      <h1>Your Life Is Working. So Why Doesn&rsquo;t It Feel Like Yours?</h1>
+      <div className="hero">
+        <h1>Your Life Is Working. So Why Doesn&rsquo;t It Feel Like Yours?</h1>
 
-      <p className="lede">
-        There&rsquo;s a specific, nameable pattern quietly running your decisions underneath the
-        life you&rsquo;ve built — and most advice can&rsquo;t help you, because it&rsquo;s written
-        before knowing which one is yours. Find out which one, in five minutes.
-      </p>
+        <p className="lede">
+          There&rsquo;s a specific, nameable pattern quietly running your decisions underneath the
+          life you&rsquo;ve built — and most advice can&rsquo;t help you, because it&rsquo;s written
+          before knowing which one is yours. Find out which one, in five minutes.
+        </p>
+      </div>
 
       <p>You know the feeling, even if you&rsquo;ve never quite said it out loud.</p>
 

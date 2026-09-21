@@ -7,7 +7,7 @@ const SECTIONS = [
     title: 'A Clear Starting Point.',
     html: `<p>Your privacy matters. This page explains how your personal information is collected, used, stored, shared, and protected when you use this website.</p>
       <p>The aim is simple: to be clear about what happens with your data, why it happens, and what rights you have.</p>
-      <p>This Privacy Policy applies to manojtailor.com and any related pages, forms, the Purpose Path Diagnostic&trade;, the Meaning Map&trade;, purchases, and any digital products or services operated through this website.</p>`,
+      <p>This Privacy Policy applies to manojtailor.com and any related pages, forms, the Purpose Path Diagnostic<sup class="tm">™</sup>, the Meaning Map<sup class="tm">™</sup>, purchases, and any digital products or services operated through this website.</p>`,
   },
   {
     number: 2,
@@ -24,7 +24,7 @@ const SECTIONS = [
         <li>your name</li>
         <li>your email address</li>
         <li>messages you send through the contact form</li>
-        <li>your responses to the Purpose Path Diagnostic&trade;</li>
+        <li>your responses to the Purpose Path Diagnostic<sup class="tm">™</sup></li>
         <li>purchase and transaction information</li>
         <li>technical data such as IP address, browser type, device type, and approximate location</li>
         <li>website usage data, such as pages visited and how you interact with the site</li>
@@ -35,7 +35,7 @@ const SECTIONS = [
   {
     number: 4,
     title: 'How We Collect Your Data.',
-    html: `<p>Your information may be collected when you visit the website, complete the Purpose Path Diagnostic&trade;, complete the contact form, purchase the Meaning Map&trade;, reply to emails, or click links in emails.</p>`,
+    html: `<p>Your information may be collected when you visit the website, complete the Purpose Path Diagnostic<sup class="tm">™</sup>, complete the contact form, purchase the Meaning Map<sup class="tm">™</sup>, reply to emails, or click links in emails.</p>`,
   },
   {
     number: 5,
@@ -44,7 +44,7 @@ const SECTIONS = [
       <table>
         <thead><tr><th>Purpose</th><th>Lawful Basis</th></tr></thead>
         <tbody>
-          <tr><td>To deliver your diagnostic result and Meaning Map&trade; report</td><td>Contract</td></tr>
+          <tr><td>To deliver your diagnostic result and Meaning Map<sup class="tm">™</sup> report</td><td>Contract</td></tr>
           <tr><td>To send you follow-up emails you&rsquo;ve opted into</td><td>Consent</td></tr>
           <tr><td>To respond to messages or enquiries</td><td>Legitimate interest</td></tr>
           <tr><td>To process purchases and payments</td><td>Contract / legal obligation</td></tr>
@@ -59,15 +59,15 @@ const SECTIONS = [
     number: 6,
     title: 'Email Communications.',
     html: `<p>When you complete the Purpose Path Diagnostic, you&rsquo;ll be asked whether you&rsquo;d like to receive your result and occasional follow-up emails by email, with a clear consent checkbox &mdash; this is currently the only way you&rsquo;d be added to an email list through this site.</p>
-      <p>These emails may include your diagnostic result, your Meaning Map&trade; delivery, onboarding after a purchase, and occasional related content.</p>
+      <p>These emails may include your diagnostic result, your Meaning Map<sup class="tm">™</sup> delivery, onboarding after a purchase, and occasional related content.</p>
       <p>You can unsubscribe at any time by clicking the unsubscribe link in any email or by contacting us directly. Where consent is the lawful basis for sending emails, you have the right to withdraw that consent at any time.</p>
       <p>We use Kit (kit.com) as our email service provider to manage subscriptions, send emails, and understand basic engagement such as opens, clicks, and unsubscribes.</p>`,
   },
   {
     number: 7,
-    title: 'The Purpose Path Diagnostic&trade;.',
-    html: `<p>This website offers the Purpose Path Diagnostic&trade;, a short reflective tool related to meaning, purpose, and personal orientation.</p>
-      <p>If you complete it, we collect your responses and use them to: generate your free result and, if purchased, your full Meaning Map&trade; report; send related follow-up emails, where you&rsquo;ve opted in; and improve the diagnostic and related content.</p>
+    title: 'The Purpose Path Diagnostic<sup class="tm">™</sup>.',
+    html: `<p>This website offers the Purpose Path Diagnostic<sup class="tm">™</sup>, a short reflective tool related to meaning, purpose, and personal orientation.</p>
+      <p>If you complete it, we collect your responses and use them to: generate your free result and, if purchased, your full Meaning Map<sup class="tm">™</sup> report; send related follow-up emails, where you&rsquo;ve opted in; and improve the diagnostic and related content.</p>
       <p>Unless clearly stated otherwise, this tool is for educational, reflective, and personal development purposes only. It is <strong>not</strong> medical advice, psychological diagnosis, therapy, legal advice, financial advice, religious instruction, or professional advice of any kind.</p>
       <p>Please avoid submitting highly sensitive personal information through the diagnostic, forms, or email unless necessary and you&rsquo;re comfortable doing so.</p>`,
   },

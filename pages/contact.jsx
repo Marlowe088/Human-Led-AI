@@ -34,7 +34,7 @@ export default function ContactPage() {
         <li>something on the site resonated with you</li>
         <li>you&rsquo;re unsure whether this work speaks to your situation</li>
         <li>you have a thoughtful question around meaning, purpose, identity, discernment, or inner orientation</li>
-        <li>you&rsquo;ve taken the Purpose Path Diagnostic&trade; and want to share what came up</li>
+        <li>you&rsquo;ve taken the Purpose Path Diagnostic<sup className="tm">™</sup> and want to share what came up</li>
         <li>you noticed something that may be useful for me to know</li>
       </ul>
 

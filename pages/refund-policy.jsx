@@ -5,12 +5,12 @@ const SECTIONS = [
   {
     number: 1,
     title: 'A Simple Starting Point.',
-    html: `<p>This Refund Policy explains when a refund may be requested and how requests are handled. The intention is simple: to be fair, clear, and consistent. The Meaning Map&trade; is a digital, reflective product, so refunds are handled differently from physical returns.</p>`,
+    html: `<p>This Refund Policy explains when a refund may be requested and how requests are handled. The intention is simple: to be fair, clear, and consistent. The Meaning Map<sup class="tm">™</sup> is a digital, reflective product, so refunds are handled differently from physical returns.</p>`,
   },
   {
     number: 2,
     title: 'The Nature of Digital Products.',
-    html: `<p>The Meaning Map&trade; is delivered digitally &mdash; a personal written report, based on your diagnostic answers. Access begins shortly after purchase.</p>`,
+    html: `<p>The Meaning Map<sup class="tm">™</sup> is delivered digitally &mdash; a personal written report, based on your diagnostic answers. Access begins shortly after purchase.</p>`,
   },
   {
     number: 3,
@@ -24,9 +24,9 @@ const SECTIONS = [
   },
   {
     number: 5,
-    title: 'The Meaning Map&trade; Guarantee.',
-    html: `<p><em>If your Meaning Map&trade; doesn&rsquo;t accurately describe what&rsquo;s actually going on for you, reply to the delivery email within 14 days of purchase and you&rsquo;ll receive a full refund. No form to complete, no proof required &mdash; just tell us it missed.</em></p>
-      <p>This guarantee applies only to the Meaning Map&trade;, and is intentionally simple: we&rsquo;d rather you get an honest no than a reluctant yes. It doesn&rsquo;t apply where a report has been copied, shared, or redistributed beyond personal use.</p>`,
+    title: 'The Meaning Map<sup class="tm">™</sup> Guarantee.',
+    html: `<p><em>If your Meaning Map<sup class="tm">™</sup> doesn&rsquo;t accurately describe what&rsquo;s actually going on for you, reply to the delivery email within 14 days of purchase and you&rsquo;ll receive a full refund. No form to complete, no proof required &mdash; just tell us it missed.</em></p>
+      <p>This guarantee applies only to the Meaning Map<sup class="tm">™</sup>, and is intentionally simple: we&rsquo;d rather you get an honest no than a reluctant yes. It doesn&rsquo;t apply where a report has been copied, shared, or redistributed beyond personal use.</p>`,
   },
   {
     number: 6,
@@ -41,7 +41,7 @@ const SECTIONS = [
   {
     number: 8,
     title: 'How to Request a Refund.',
-    html: `<p>Reply directly to the email your Meaning Map&trade; was delivered in, or contact: <a href="mailto:manoj@manojtailor.com">manoj@manojtailor.com</a>. Include your name, the email used for purchase, and the date of purchase. Requests are usually reviewed within a few working days.</p>`,
+    html: `<p>Reply directly to the email your Meaning Map<sup class="tm">™</sup> was delivered in, or contact: <a href="mailto:manoj@manojtailor.com">manoj@manojtailor.com</a>. Include your name, the email used for purchase, and the date of purchase. Requests are usually reviewed within a few working days.</p>`,
   },
   {
     number: 9,
@@ -61,7 +61,7 @@ const SECTIONS = [
   {
     number: 12,
     title: 'If You Are Unsure Before Buying.',
-    html: `<p>If you&rsquo;re unsure whether the Meaning Map&trade; is right for you, take your time before purchasing &mdash; read the offer page and FAQ carefully, and ask a question first if something&rsquo;s unclear.</p>`,
+    html: `<p>If you&rsquo;re unsure whether the Meaning Map<sup class="tm">™</sup> is right for you, take your time before purchasing &mdash; read the offer page and FAQ carefully, and ask a question first if something&rsquo;s unclear.</p>`,
   },
   {
     number: 13,

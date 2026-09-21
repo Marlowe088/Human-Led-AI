@@ -10,7 +10,7 @@ const SECTIONS = [
   {
     number: 2,
     title: 'Informational and Educational Purposes Only.',
-    html: `<p>All content &mdash; website pages, the Purpose Path&trade; Diagnostic, the Meaning Map&trade; report, and any future digital products &mdash; is provided for informational, educational, reflective, and personal development purposes only. It is not professional advice.</p>`,
+    html: `<p>All content &mdash; website pages, the Purpose Path<sup class="tm">™</sup> Diagnostic, the Meaning Map<sup class="tm">™</sup> report, and any future digital products &mdash; is provided for informational, educational, reflective, and personal development purposes only. It is not professional advice.</p>`,
   },
   {
     number: 3,
@@ -30,22 +30,22 @@ const SECTIONS = [
   {
     number: 6,
     title: 'No Guarantees.',
-    html: `<p>No specific outcome is guaranteed. Completing the diagnostic or purchasing the Meaning Map&trade; does not guarantee finding your purpose, achieving clarity, improving relationships, or any other specific personal or professional result. Results will vary.</p>`,
+    html: `<p>No specific outcome is guaranteed. Completing the diagnostic or purchasing the Meaning Map<sup class="tm">™</sup> does not guarantee finding your purpose, achieving clarity, improving relationships, or any other specific personal or professional result. Results will vary.</p>`,
   },
   {
     number: 7,
-    title: 'No Guarantee of &ldquo;Correct&rdquo; Decisions.',
+    title: 'No Guarantee of Decisions.',
     html: `<p>This material may support decision clarity and self-reflection, but it does not guarantee that any decision you make will be correct, successful, or favourable in hindsight. Life involves uncertainty and consequences outside your control.</p>`,
   },
   {
     number: 8,
-    title: 'The Purpose Path Diagnostic&trade;.',
+    title: 'The Purpose Path Diagnostic<sup class="tm">™</sup>.',
     html: `<p>This tool is not a clinical, medical, psychological, or scientific assessment. It&rsquo;s intended to support self-reflection and orientation. Any result should be treated as a reflective prompt &mdash; not a fixed identity, diagnosis, or final verdict on your life.</p>`,
   },
   {
     number: 9,
-    title: 'The Meaning Map&trade;.',
-    html: `<p>The Meaning Map&trade; is a personal written report, built from your diagnostic answers, designed for educational and reflective purposes. It may help you understand the pattern currently shaping your decisions, what it&rsquo;s likely costing you, and one honest next step &mdash; but it does not guarantee a specific outcome, and it is not therapy, medical care, legal advice, or religious instruction. Your use of it remains your responsibility.</p>`,
+    title: 'The Meaning Map<sup class="tm">™</sup>.',
+    html: `<p>The Meaning Map<sup class="tm">™</sup> is a personal written report, built from your diagnostic answers, designed for educational and reflective purposes. It may help you understand the pattern currently shaping your decisions, what it&rsquo;s likely costing you, and one honest next step &mdash; but it does not guarantee a specific outcome, and it is not therapy, medical care, legal advice, or religious instruction. Your use of it remains your responsibility.</p>`,
   },
   {
     number: 10,
@@ -75,7 +75,7 @@ const SECTIONS = [
   {
     number: 15,
     title: 'Digital Products and Consumer Rights.',
-    html: `<p>The Meaning Map&trade; is delivered digitally, shortly after purchase. Nothing in this Disclaimer removes or reduces your statutory rights under applicable consumer law. Refunds and cancellations are handled per the Terms of Use and Refund Policy.</p>`,
+    html: `<p>The Meaning Map<sup class="tm">™</sup> is delivered digitally, shortly after purchase. Nothing in this Disclaimer removes or reduces your statutory rights under applicable consumer law. Refunds and cancellations are handled per the Terms of Use and Refund Policy.</p>`,
   },
   {
     number: 16,
