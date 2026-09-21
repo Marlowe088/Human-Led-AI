@@ -90,14 +90,17 @@ export default async function handler(req, res) {
   }
 
   try {
-    await ensureCustomField(apiKey, CUSTOM_FIELD_LABEL);
+    const customField = await ensureCustomField(apiKey, CUSTOM_FIELD_LABEL);
+
+    const fieldKey = customField && customField.key ? customField.key : CUSTOM_FIELD_LABEL;
+    console.log(`subscribe: using custom field key "${fieldKey}" (from field:`, customField, ')');
 
     const subResult = await kitFetch('/subscribers', apiKey, {
       method: 'POST',
       body: JSON.stringify({
         email_address: email,
         first_name: name || null,
-        fields: { [CUSTOM_FIELD_LABEL]: purposePath },
+        fields: { [fieldKey]: purposePath },
       }),
     });
 
