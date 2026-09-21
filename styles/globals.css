@@ -272,18 +272,19 @@ hr.rule {
 /* ---------- Diagnostic progress indicator ---------- */
 .progress-label {
   font-size: 15px;
-  color: var(--ink-muted);
+  font-weight: 600;
+  color: var(--ink);
   margin: 0 0 8px;
 }
 
 .progress-track {
-  height: 2px;
-  background: var(--border);
+  height: 3px;
+  background: #b9b2a4;
   margin: 0 0 var(--space-4);
 }
 
 .progress-fill {
-  height: 2px;
+  height: 3px;
   background: var(--accent);
   transition: width 0.2s ease;
 }
@@ -336,7 +337,7 @@ hr.rule {
   line-height: 1.5;
   color: var(--ink);
   background: transparent;
-  border: 1px solid var(--border);
+  border: 2px solid #8a8276;
   border-radius: 2px;
   padding: 14px 16px;
   margin: 0 0 10px;
@@ -354,7 +355,8 @@ hr.rule {
 }
 
 .option-letter {
-  color: var(--ink-muted);
+  color: var(--ink);
+  font-weight: 600;
   margin-right: 8px;
 }
 
