@@ -283,6 +283,25 @@ export default function DiagnosticPage() {
       return;
     }
     setGateError('');
+
+    const typeInfo = TYPES[scoreAnswers(answers)];
+    const purposePath = typeInfo.name.replace(/^The\s+/, '');
+
+    // Best-effort: send to Kit, but never let this block or fail the
+    // reveal. The on-screen result is the primary delivery.
+    fetch('/api/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: name.trim(),
+        email: email.trim(),
+        purposePath,
+        wantsUpdates: sendUpdates,
+      }),
+    }).catch((err) => {
+      console.error('subscribe request failed:', err);
+    });
+
     setStep(totalQuestions + 1); // move to result
   }
 
