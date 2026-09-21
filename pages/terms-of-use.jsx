@@ -146,7 +146,7 @@ export default function TermsOfUsePage() {
         <title>Terms of Use — Manoj Tailor</title>
       </Head>
       <h1 className="legal-title">Terms of Use.</h1>
-      <p className="caption">Last updated: September 2026.</p>
+      <p className="caption">manojtailor.com &middot; Last updated: September 2026.</p>
       <LegalSections sections={SECTIONS} />
     </>
   );

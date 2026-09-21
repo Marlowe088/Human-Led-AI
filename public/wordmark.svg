@@ -9,12 +9,12 @@
         fill: #000000;
       }
       .accent-l {
-        fill: #2e3350;
+        fill: #4d5aa8;
       }
     </style>
   </defs>
   <text y="25" class="name">
     <tspan x="0">MANOJ TAI</tspan><tspan x="155.18" class="accent-l">L</tspan><tspan x="172.04">OR</tspan>
   </text>
-  <rect x="0" y="30" width="213.39" height="3" fill="#2e3350" />
+  <rect x="0" y="30" width="213.39" height="3" fill="#4d5aa8" />
 </svg>

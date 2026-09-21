@@ -151,7 +151,7 @@ export default function PrivacyPolicyPage() {
         <title>Privacy Policy — Manoj Tailor</title>
       </Head>
       <h1 className="legal-title">Privacy Policy.</h1>
-      <p className="caption">Last updated: September 2026.</p>
+      <p className="caption">manojtailor.com &middot; Last updated: September 2026.</p>
       <LegalSections sections={SECTIONS} />
     </>
   );
