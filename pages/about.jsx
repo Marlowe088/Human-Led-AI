@@ -201,8 +201,8 @@ export default function AboutPage() {
       <p>And they still feel a quiet lack of orientation.</p>
 
       <p>
-        The Meaning Map<sup className="tm">™</sup> is a short diagnostic, followed by a free short personal written
-        report &mdash; built from your specific answers, not a generic template &mdash; that
+        The Meaning Map<sup className="tm">™</sup> is a short diagnostic, followed by a free short written result,
+        based on your answers, that
         names which pattern is currently running your life and your daily decisions, what
         it&rsquo;s likely costing you without your noticing, and the one honest next step you may
         need to take.

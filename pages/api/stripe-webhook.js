@@ -71,13 +71,18 @@ async function handlePaidSession(session) {
   await tagSubscriber(apiKey, purchasedTag.id, subscriberId);
 
   // Send the delivery email: add the buyer to the "Meaning Map delivery" sequence.
-  // If that sequence doesn't exist yet this throws, so Stripe retries the webhook
-  // (for up to three days) and the buyer is emailed as soon as it has been created.
+  // If that sequence hasn't been created in Kit (e.g. on the free plan, where the
+  // delivery email is sent by hand), that's NOT an error: log it and carry on. The
+  // buyer is already tagged and has their Report Link saved, so nothing is lost, and
+  // earlier buyers can be added to the sequence in Kit once it exists.
+  // A genuine Kit failure while adding to an existing sequence still throws, so
+  // Stripe retries.
   const sequenceId = await findSequenceId(apiKey, DELIVERY_SEQUENCE_NAME);
   if (!sequenceId) {
-    throw new Error(
-      `Kit email sequence "${DELIVERY_SEQUENCE_NAME}" was not found. Create it in Kit (Automations > Email sequences).`
+    console.warn(
+      `stripe-webhook: Kit sequence "${DELIVERY_SEQUENCE_NAME}" not found; buyer ${session.id} tagged and Report Link saved, but no delivery email sent automatically.`
     );
+    return;
   }
   await addSubscriberToSequence(apiKey, sequenceId, subscriberId);
 }

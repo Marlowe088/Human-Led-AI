@@ -55,13 +55,15 @@ export default function ThankYouPage({ status, sessionId, purposePath, email }) 
           </p>
 
           <p>
-            A copy is also on its way to {email ? <strong>{email}</strong> : 'your inbox'}. If you
-            don&rsquo;t see it within a few minutes, check your Promotions tab and your spam folder.
+            Bookmark this page so you can come back to your download at any time. A payment receipt
+            from Stripe should reach {email ? <strong>{email}</strong> : 'your inbox'} straight away,
+            and I&rsquo;ll email you a copy of your Meaning Map within a day. If you don&rsquo;t see
+            my email, check your Promotions tab and your spam folder.
           </p>
 
           <p>
             Read it. If it doesn&rsquo;t accurately describe what&rsquo;s going on for you, reply to
-            that email within 14 days and I&rsquo;ll refund you in full. The details are in the{' '}
+            my email within 14 days and I&rsquo;ll refund you in full. The details are in the{' '}
             <Link href="/refund-policy">Refund Policy</Link>.
           </p>
 

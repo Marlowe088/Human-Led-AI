@@ -1,6 +1,6 @@
 // pages/api/checkout.js
 //
-// Called when someone clicks "Get My Meaning Map — £29" on the diagnostic page.
+// Called when someone clicks "Get My Meaning Map — £7" on the diagnostic page.
 // Creates a Stripe Checkout session and returns its URL; the browser then
 // redirects to Stripe's own hosted payment page, so card details never touch
 // this site.
@@ -45,7 +45,7 @@ export default async function handler(req, res) {
   // address (and nobody else) may check out while live payments are still closed,
   // and, if TEST_PRICE_PENCE is also set, pays that smaller amount (Stripe's minimum
   // is 30p). Everyone else is unaffected: they stay blocked until ALLOW_LIVE_PAYMENTS
-  // is 'true', and then pay the normal £29.
+  // is 'true', and then pay the normal £7.
   const testEmail = (process.env.TEST_BUYER_EMAIL || '').trim().toLowerCase();
   const isTestBuyer = testEmail !== '' && email.trim().toLowerCase() === testEmail;
 
@@ -82,7 +82,7 @@ export default async function handler(req, res) {
             unit_amount: unitAmount,
             product_data: {
               name: `The Meaning Map™ — The ${purposePath}`,
-              description: 'Your personal written Meaning Map report (digital PDF).',
+              description: 'Your written Meaning Map report (digital PDF).',
             },
           },
         },

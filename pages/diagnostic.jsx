@@ -210,8 +210,8 @@ const FAQS = [
     a: 'No. The first step here is one honest map and one honest next step — not walking away from your responsibilities or turning everything upside down.',
   },
   {
-    q: 'Is my full report actually personal, or a template with my name inserted?',
-    a: 'Genuinely personal — built from your specific answers, written by me, not auto-generated. That’s also exactly what the guarantee above covers: if it doesn’t accurately describe you, you don’t pay for it.',
+    q: 'Is my full report written just for me?',
+    a: 'It’s written for your pattern rather than for you as an individual. There are five reports, one for each Purpose Path, and your answers point you to the one that fits best. That’s also exactly what the guarantee above covers: if it doesn’t accurately describe what’s going on for you, you don’t pay for it.',
   },
   {
     q: 'What if my result feels wrong?',
@@ -505,8 +505,8 @@ export default function DiagnosticPage() {
           </ul>
 
           <p>
-            Your full Meaning Map is built from your specific answers — not a generic version
-            of the {resultType.name} profile. Ready to see it?
+            Your full Meaning Map goes deeper into the pattern your answers point to — {resultType.name} —
+            in a written report you keep. Ready to see it?
           </p>
 
           <div className="cta-row">
@@ -516,8 +516,8 @@ export default function DiagnosticPage() {
           </div>
 
           <p className="meta-line">
-            Your Own Meaning Map, Built From Your Answers &middot; No Course, No App, No Ongoing
-            Commitment &middot; Written By Me, Not Generated From a Template
+            The Meaning Map For Your Pattern &middot; No Course, No App, No Ongoing
+            Commitment &middot; Written By Me
           </p>
 
           <p className="caption">
@@ -529,11 +529,13 @@ export default function DiagnosticPage() {
           <hr className="rule" />
 
           <div id="offer">
-            <p><strong>Your full {resultType.name} Meaning Map — £29</strong></p>
+            <p><strong>Your full {resultType.name} Meaning Map — £7</strong></p>
             <p>
-              Less than the cost of a single hour with most therapists or coaches, delivered as a
-              complete, personal, written report you keep — not a session you have to be
-              present for, not a course you have to work through.
+              A complete written report you keep — not a session you have to be present for, not
+              a course you have to work through.
+            </p>
+            <p className="caption">
+              Currently available to customers in the UK, USA and Australia.
             </p>
 
             <div className="checkbox-row">
@@ -554,7 +556,7 @@ export default function DiagnosticPage() {
 
             <div className="cta-row">
               <button type="button" className="cta" disabled={!purchaseConsent || checkoutLoading} onClick={startCheckout}>
-                {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £29 →'}
+                {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £7 →'}
               </button>
             </div>
             {checkoutError && <p className="form-error">{checkoutError}</p>}
@@ -569,7 +571,7 @@ export default function DiagnosticPage() {
 
             <div className="cta-row">
               <button type="button" className="cta" disabled={!purchaseConsent || checkoutLoading} onClick={startCheckout}>
-                {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £29 →'}
+                {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £7 →'}
               </button>
             </div>
             {checkoutError && <p className="form-error">{checkoutError}</p>}
@@ -594,7 +596,7 @@ export default function DiagnosticPage() {
 
           <div className="cta-row">
             <button type="button" className="cta" disabled={!purchaseConsent || checkoutLoading} onClick={startCheckout}>
-              {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £29 →'}
+              {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £7 →'}
             </button>
           </div>
           {checkoutError && <p className="form-error">{checkoutError}</p>}
