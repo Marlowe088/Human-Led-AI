@@ -17,7 +17,12 @@ import {
   ensureTag,
   upsertSubscriber,
   tagSubscriber,
+  findSequenceId,
+  addSubscriberToSequence,
 } from '../../lib/kit';
+
+// The email sequence in Kit that holds the delivery email. Must match its name exactly.
+const DELIVERY_SEQUENCE_NAME = 'Meaning Map delivery';
 
 // Stripe's signature check needs the raw, unparsed request body.
 export const config = { api: { bodyParser: false } };
@@ -64,6 +69,17 @@ async function handlePaidSession(session) {
 
   const purchasedTag = await ensureTag(apiKey, 'Meaning Map Purchased');
   await tagSubscriber(apiKey, purchasedTag.id, subscriberId);
+
+  // Send the delivery email: add the buyer to the "Meaning Map delivery" sequence.
+  // If that sequence doesn't exist yet this throws, so Stripe retries the webhook
+  // (for up to three days) and the buyer is emailed as soon as it has been created.
+  const sequenceId = await findSequenceId(apiKey, DELIVERY_SEQUENCE_NAME);
+  if (!sequenceId) {
+    throw new Error(
+      `Kit email sequence "${DELIVERY_SEQUENCE_NAME}" was not found. Create it in Kit (Automations > Email sequences).`
+    );
+  }
+  await addSubscriberToSequence(apiKey, sequenceId, subscriberId);
 }
 
 export default async function handler(req, res) {
