@@ -255,6 +255,8 @@ export default function DiagnosticPage() {
   const [sendResult, setSendResult] = useState(false);
   const [sendUpdates, setSendUpdates] = useState(false);
   const [purchaseConsent, setPurchaseConsent] = useState(false);
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  const [checkoutError, setCheckoutError] = useState('');
   const [gateError, setGateError] = useState('');
 
   const totalQuestions = QUESTIONS.length;
@@ -303,6 +305,36 @@ export default function DiagnosticPage() {
     });
 
     setStep(totalQuestions + 1); // move to result
+  }
+
+  async function startCheckout() {
+    if (!purchaseConsent || checkoutLoading) return;
+    setCheckoutError('');
+    setCheckoutLoading(true);
+    try {
+      const purposePath = TYPES[scoreAnswers(answers)].name.replace(/^The\s+/, '');
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          purposePath,
+          email: email.trim(),
+          name: name.trim(),
+          digitalAccessConsent: true,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.url) {
+        window.location.href = data.url;
+        return;
+      }
+    } catch (err) {
+      console.error('checkout request failed:', err);
+    }
+    setCheckoutError(
+      'Sorry, checkout could not be started. Please try again, or email manoj@manojtailor.com and I will sort it out directly.'
+    );
+    setCheckoutLoading(false);
   }
 
   const resultType = step > totalQuestions ? TYPES[scoreAnswers(answers)] : null;
@@ -521,10 +553,11 @@ export default function DiagnosticPage() {
             </div>
 
             <div className="cta-row">
-              <button type="button" className="cta" disabled={!purchaseConsent} title="Checkout is not connected yet">
-                Get My Meaning Map — £29 →
+              <button type="button" className="cta" disabled={!purchaseConsent || checkoutLoading} onClick={startCheckout}>
+                {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £29 →'}
               </button>
             </div>
+            {checkoutError && <p className="form-error">{checkoutError}</p>}
 
             <p><strong>Read it. If it doesn&rsquo;t land, you don&rsquo;t pay for it.</strong></p>
             <p>
@@ -535,10 +568,11 @@ export default function DiagnosticPage() {
             </p>
 
             <div className="cta-row">
-              <button type="button" className="cta" disabled={!purchaseConsent} title="Checkout is not connected yet">
-                Get My Meaning Map — £29 →
+              <button type="button" className="cta" disabled={!purchaseConsent || checkoutLoading} onClick={startCheckout}>
+                {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £29 →'}
               </button>
             </div>
+            {checkoutError && <p className="form-error">{checkoutError}</p>}
           </div>
 
           <hr className="rule" />
@@ -559,10 +593,11 @@ export default function DiagnosticPage() {
           </p>
 
           <div className="cta-row">
-            <button type="button" className="cta" disabled={!purchaseConsent} title="Checkout is not connected yet">
-              Get My Meaning Map — £29 →
+            <button type="button" className="cta" disabled={!purchaseConsent || checkoutLoading} onClick={startCheckout}>
+              {checkoutLoading ? 'One moment…' : 'Get My Meaning Map — £29 →'}
             </button>
           </div>
+          {checkoutError && <p className="form-error">{checkoutError}</p>}
         </>
       )}
     </>
