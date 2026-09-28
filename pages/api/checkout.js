@@ -41,9 +41,26 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Checkout is not configured' });
   }
 
-  if (livePaymentsBlocked()) {
+  // Owner-only test override. If TEST_BUYER_EMAIL is set in Vercel, that ONE email
+  // address (and nobody else) may check out while live payments are still closed,
+  // and, if TEST_PRICE_PENCE is also set, pays that smaller amount (Stripe's minimum
+  // is 30p). Everyone else is unaffected: they stay blocked until ALLOW_LIVE_PAYMENTS
+  // is 'true', and then pay the normal £29.
+  const testEmail = (process.env.TEST_BUYER_EMAIL || '').trim().toLowerCase();
+  const isTestBuyer = testEmail !== '' && email.trim().toLowerCase() === testEmail;
+
+  if (livePaymentsBlocked() && !isTestBuyer) {
     console.error('checkout: live Stripe key present but ALLOW_LIVE_PAYMENTS is not "true" — refusing');
     return res.status(503).json({ error: 'Checkout is not open yet' });
+  }
+
+  let unitAmount = PRICE_PENCE;
+  if (isTestBuyer) {
+    const testPence = parseInt(process.env.TEST_PRICE_PENCE, 10);
+    if (Number.isInteger(testPence) && testPence >= 30 && testPence <= PRICE_PENCE) {
+      unitAmount = testPence;
+      console.log(`checkout: owner test purchase at ${testPence}p`);
+    }
   }
 
   const metadata = {
@@ -51,6 +68,7 @@ export default async function handler(req, res) {
     firstName: String(name || '').trim().slice(0, 100),
     digitalAccessConsent: 'true',
     digitalAccessConsentAt: new Date().toISOString(),
+    ...(unitAmount !== PRICE_PENCE ? { testPurchase: 'true' } : {}),
   };
 
   try {
@@ -61,7 +79,7 @@ export default async function handler(req, res) {
           quantity: 1,
           price_data: {
             currency: CURRENCY,
-            unit_amount: PRICE_PENCE,
+            unit_amount: unitAmount,
             product_data: {
               name: `The Meaning Map™ — The ${purposePath}`,
               description: 'Your personal written Meaning Map report (digital PDF).',
