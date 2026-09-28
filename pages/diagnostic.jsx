@@ -534,9 +534,6 @@ export default function DiagnosticPage() {
               A complete written report you keep — not a session you have to be present for, not
               a course you have to work through.
             </p>
-            <p className="caption">
-              Currently available to customers in the UK, USA and Australia.
-            </p>
 
             <div className="checkbox-row">
               <input
