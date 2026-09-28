@@ -430,6 +430,11 @@ export default function DiagnosticPage() {
         <>
           <h1>Your Purpose Path: {resultType.name}</h1>
 
+          <p className="caption" style={{ color: 'var(--ink)' }}>
+            Your result is also on its way to your inbox. If you don&rsquo;t see it within a few
+            minutes, check your Promotions tab and your spam folder.
+          </p>
+
           <p>Your current Purpose Path appears to be <strong>{resultType.name}</strong>.</p>
           <p>This path finds meaning through {resultType.meaningThrough}.</p>
           <p>{resultType.p1}</p>
