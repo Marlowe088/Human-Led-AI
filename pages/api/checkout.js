@@ -12,6 +12,7 @@
 import {
   getStripe,
   livePaymentsBlocked,
+  allowedCountryNames,
   PURPOSE_PATHS,
   PRICE_PENCE,
   CURRENCY,
@@ -88,6 +89,11 @@ export default async function handler(req, res) {
         },
       ],
       customer_email: email.trim(),
+      custom_text: {
+        submit: {
+          message: `The Meaning Map is currently available to customers in ${allowedCountryNames()}. Orders from other countries are refunded in full.`,
+        },
+      },
       metadata,
       payment_intent_data: { metadata },
       success_url: `${SITE_URL}/thank-you?session_id={CHECKOUT_SESSION_ID}`,

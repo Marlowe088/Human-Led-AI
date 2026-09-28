@@ -60,7 +60,7 @@ const SECTIONS = [
   {
     number: 12,
     title: 'Payments and Digital Access.',
-    html: `<p>Prices are shown clearly before purchase, in GBP. The Meaning Map<sup class="tm">™</sup> is currently available to customers in the United Kingdom, the United States and Australia. By purchasing, you agree to pay the stated price, provide accurate information, and receive digital access to the Meaning Map<sup class="tm">™</sup> report. Payment is processed by Stripe; we do not directly store your full card details. Access is provided digitally after purchase.</p>`,
+    html: `<p>Prices are shown clearly before purchase, in GBP. The Meaning Map<sup class="tm">™</sup> is currently available to customers in the United Kingdom, the United States and Australia. If an order is placed from another country, it will be refunded in full and access will not be provided. By purchasing, you agree to pay the stated price, provide accurate information, and receive digital access to the Meaning Map<sup class="tm">™</sup> report. Payment is processed by Stripe; we do not directly store your full card details. Access is provided digitally after purchase.</p>`,
   },
   {
     number: 13,

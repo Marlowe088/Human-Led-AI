@@ -9,7 +9,13 @@
 
 import { Readable } from 'node:stream';
 import { get, list } from '@vercel/blob';
-import { getStripe, isValidSessionId, PURPOSE_PATHS } from '../../lib/stripe';
+import {
+  getStripe,
+  isValidSessionId,
+  PURPOSE_PATHS,
+  buyerCountry,
+  isCountryAllowed,
+} from '../../lib/stripe';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
@@ -37,6 +43,12 @@ export default async function handler(req, res) {
 
   if (session.payment_status !== 'paid') {
     return res.status(402).end('This purchase has not been completed.');
+  }
+
+  if (!isCountryAllowed(buyerCountry(session))) {
+    return res
+      .status(403)
+      .end('The Meaning Map is not currently available in your country, so this purchase is being refunded.');
   }
 
   const purposePath = session.metadata && session.metadata.purposePath;

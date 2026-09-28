@@ -11,7 +11,13 @@
 // webhook automatically (with backoff, for up to three days). Every step is
 // safe to repeat.
 
-import { getStripe, PURPOSE_PATHS, SITE_URL } from '../../lib/stripe';
+import {
+  getStripe,
+  PURPOSE_PATHS,
+  SITE_URL,
+  buyerCountry,
+  isCountryAllowed,
+} from '../../lib/stripe';
 import {
   ensureCustomField,
   ensureTag,
@@ -35,7 +41,50 @@ async function readRawBody(req) {
   return Buffer.concat(chunks);
 }
 
-async function handlePaidSession(session) {
+// An order from a country where the Meaning Map isn't currently sold: refund it in
+// full and deliver nothing (no Kit tag, and the download/thank-you pages refuse it
+// too). Safe to repeat: Stripe replays the same refund for the same key, and an
+// "already refunded" error is treated as success.
+async function refundUnavailableCountry(stripe, session, country) {
+  console.warn(
+    `stripe-webhook: order ${session.id} is from ${country}, where the Meaning Map is not currently available. Refunding in full; nothing delivered.`
+  );
+  const paymentIntent =
+    typeof session.payment_intent === 'string'
+      ? session.payment_intent
+      : session.payment_intent && session.payment_intent.id;
+  if (!paymentIntent) {
+    throw new Error(`Session ${session.id} has no payment_intent to refund`);
+  }
+  try {
+    await stripe.refunds.create(
+      {
+        payment_intent: paymentIntent,
+        reason: 'requested_by_customer',
+        metadata: {
+          autoRefund: 'unavailable_country',
+          country,
+          checkoutSession: session.id,
+        },
+      },
+      { idempotencyKey: `refund-unavailable-country-${session.id}` }
+    );
+  } catch (err) {
+    if (err && err.code === 'charge_already_refunded') return;
+    throw err;
+  }
+}
+
+async function handlePaidSession(session, stripe) {
+  const country = buyerCountry(session);
+  if (!country) {
+    console.warn(`stripe-webhook: order ${session.id} has no billing country; allowing it through.`);
+  }
+  if (!isCountryAllowed(country)) {
+    await refundUnavailableCountry(stripe, session, country);
+    return;
+  }
+
   const apiKey = process.env.KIT_API_KEY;
   if (!apiKey) throw new Error('KIT_API_KEY is not set');
 
@@ -133,7 +182,7 @@ export default async function handler(req, res) {
     const session = event.data.object;
     if (session.payment_status === 'paid') {
       try {
-        await handlePaidSession(session);
+        await handlePaidSession(session, stripe);
       } catch (err) {
         console.error('stripe-webhook: could not process paid session:', err);
         return res.status(500).json({ received: false });

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { getStripe, isValidSessionId } from '../lib/stripe';
+import { getStripe, isValidSessionId, buyerCountry, isCountryAllowed } from '../lib/stripe';
 
 export async function getServerSideProps({ query }) {
   const sessionId = typeof query.session_id === 'string' ? query.session_id : '';
@@ -14,6 +14,9 @@ export async function getServerSideProps({ query }) {
     const session = await stripe.checkout.sessions.retrieve(sessionId);
     if (session.payment_status !== 'paid') {
       return { props: { status: 'pending' } };
+    }
+    if (!isCountryAllowed(buyerCountry(session))) {
+      return { props: { status: 'unavailable' } };
     }
     return {
       props: {
@@ -79,6 +82,19 @@ export default function ThankYouPage({ status, sessionId, purposePath, email }) 
             hasn&rsquo;t changed, email{' '}
             <a href="mailto:manoj@manojtailor.com">manoj@manojtailor.com</a> and I&rsquo;ll sort it
             out directly.
+          </p>
+        </>
+      )}
+
+      {status === 'unavailable' && (
+        <>
+          <h1>Sorry, this isn&rsquo;t available in your country yet.</h1>
+          <p>
+            The Meaning Map isn&rsquo;t currently available to customers in your country. Your
+            payment is being refunded in full, and it should appear on your statement within 5 to
+            10 working days. If you think this is a mistake, email{' '}
+            <a href="mailto:manoj@manojtailor.com">manoj@manojtailor.com</a> and I&rsquo;ll look
+            into it.
           </p>
         </>
       )}
