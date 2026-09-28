@@ -84,8 +84,9 @@ export default async function handler(req, res) {
   }
 
   let event;
+  let rawBody = null;
   try {
-    const rawBody = await readRawBody(req);
+    rawBody = await readRawBody(req);
     event = stripe.webhooks.constructEvent(rawBody, req.headers['stripe-signature'], webhookSecret);
   } catch (err) {
     // Logs the reason plus non-secret facts about the configured secret (never the
@@ -95,7 +96,8 @@ export default async function handler(req, res) {
       err.message,
       `| secret starts with whsec_: ${webhookSecret.startsWith('whsec_')}`,
       `| secret length: ${webhookSecret.length}`,
-      `| stripe-signature header present: ${Boolean(req.headers['stripe-signature'])}`
+      `| stripe-signature header present: ${Boolean(req.headers['stripe-signature'])}`,
+      `| raw body bytes received: ${rawBody ? rawBody.length : 'not read'}`
     );
     return res.status(400).end('Invalid signature');
   }
