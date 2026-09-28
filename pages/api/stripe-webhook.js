@@ -72,12 +72,15 @@ export default async function handler(req, res) {
   }
 
   const stripe = getStripe();
-  // Tolerate a stray space, newline, or wrapping quote marks picked up when the
-  // secret was copied into Vercel — the most common cause of "Invalid signature".
-  const webhookSecret = (process.env.STRIPE_WEBHOOK_SECRET || '')
-    .trim()
-    .replace(/^["']+|["']+$/g, '')
-    .trim();
+  // Tolerate anything picked up around the secret when it was copied into Vercel
+  // (extra text, newlines, quote marks) — the most common cause of "Invalid
+  // signature". A real signing secret is one whitespace-free token starting with
+  // "whsec_", so pull out exactly that; fall back to the trimmed value if none.
+  const rawSecretValue = process.env.STRIPE_WEBHOOK_SECRET || '';
+  const secretMatch = rawSecretValue.match(/whsec_[^\s"'`,;]+/);
+  const webhookSecret = secretMatch
+    ? secretMatch[0]
+    : rawSecretValue.trim().replace(/^["']+|["']+$/g, '').trim();
   if (!stripe || !webhookSecret) {
     console.error('stripe-webhook: STRIPE_SECRET_KEY or STRIPE_WEBHOOK_SECRET is not set');
     return res.status(500).end('Webhook not configured');
@@ -95,7 +98,7 @@ export default async function handler(req, res) {
       'stripe-webhook: signature verification failed:',
       err.message,
       `| secret starts with whsec_: ${webhookSecret.startsWith('whsec_')}`,
-      `| secret length: ${webhookSecret.length}`,
+      `| secret length used: ${webhookSecret.length} (value stored in Vercel: ${rawSecretValue.length})`,
       `| stripe-signature header present: ${Boolean(req.headers['stripe-signature'])}`,
       `| raw body bytes received: ${rawBody ? rawBody.length : 'not read'}`
     );
