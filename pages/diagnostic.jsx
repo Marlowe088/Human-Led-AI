@@ -517,7 +517,7 @@ export default function DiagnosticPage() {
 
           <p className="meta-line">
             The Meaning Map For Your Pattern &middot; No Course, No App, No Ongoing
-            Commitment &middot; Written By Me
+            Commitment
           </p>
 
           <p className="caption">
