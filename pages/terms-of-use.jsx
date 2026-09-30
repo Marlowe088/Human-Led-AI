@@ -50,7 +50,7 @@ const SECTIONS = [
   {
     number: 10,
     title: 'Intellectual Property.',
-    html: `<p>All content on this website &mdash; including the Meaning Map<sup class="tm">™</sup>, the Purpose Path<sup class="tm">™</sup> Diagnostic, the Five Purpose Paths<sup class="tm">™</sup>, and related materials &mdash; is owned by Manoj Tailor or licensed for use, and protected by copyright and applicable law. You may not reproduce, sell, distribute, or train AI systems on this material without written permission.</p>`,
+    html: `<p>All content on this website &mdash; including the Meaning Map<sup class="tm">™</sup>, the Purpose Path<sup class="tm">™</sup> Diagnostic, the Purpose Paths<sup class="tm">™</sup>, and related materials &mdash; is owned by Manoj Tailor or licensed for use, and protected by copyright and applicable law. You may not reproduce, sell, distribute, or train AI systems on this material without written permission.</p>`,
   },
   {
     number: 11,

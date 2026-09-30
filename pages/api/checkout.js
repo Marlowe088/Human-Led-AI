@@ -6,7 +6,7 @@
 // this site.
 //
 // The price, currency, and product name are set here, server-side. The browser
-// only says WHICH of the five reports it's for, and confirms the immediate-
+// only says WHICH of the four reports it's for, and confirms the immediate-
 // digital-access consent checkbox was ticked.
 
 import {

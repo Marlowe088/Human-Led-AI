@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 /* ---------------------------------------------------------------------- */
-/* Locked copy: questions, scoring, and the five Purpose Path free results */
+/* Locked copy: questions, scoring, and the four Purpose Path free results */
 /* ---------------------------------------------------------------------- */
 
 const QUESTIONS = [
@@ -13,7 +13,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'Building, improving, or growing something that creates practical value.' },
       { letter: 'C', text: 'Standing for what matters and protecting what should not be neglected.' },
       { letter: 'D', text: 'Understanding life more deeply and helping others see more clearly.' },
-      { letter: 'E', text: 'Creating a freer, more authentic way forward that does not follow the old script.' },
     ],
   },
   {
@@ -23,7 +22,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'Turning potential into progress through structure, action, and improvement.' },
       { letter: 'C', text: 'Taking responsibility when something important needs courage, standards, or leadership.' },
       { letter: 'D', text: 'Offering insight, perspective, guidance, or teaching that helps someone understand.' },
-      { letter: 'E', text: 'Opening a new path, exploring what others overlook, or creating an original direction.' },
     ],
   },
   {
@@ -33,7 +31,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'Wasted potential, inefficiency, or things staying stuck when they could improve.' },
       { letter: 'C', text: 'Weak boundaries, lack of courage, or people avoiding necessary responsibility.' },
       { letter: 'D', text: 'Shallow thinking, confusion, noise, or people not seeking deeper truth.' },
-      { letter: 'E', text: 'Feeling trapped in roles, routines, or expectations that leave no room for freedom.' },
     ],
   },
   {
@@ -43,7 +40,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'The builder who improves systems, creates momentum, and helps things work better.' },
       { letter: 'C', text: 'The protector who names what matters, holds the line, and takes responsibility.' },
       { letter: 'D', text: 'The guide who reflects, interprets, teaches, and brings wisdom into the room.' },
-      { letter: 'E', text: 'The explorer who questions assumptions, finds new possibilities, and moves beyond convention.' },
     ],
   },
   {
@@ -53,7 +49,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'Measuring your worth by productivity, progress, achievement, or visible success.' },
       { letter: 'C', text: 'Staying strong, guarded, or in control because you feel responsible for everything.' },
       { letter: 'D', text: 'Hiding in thinking, learning, or observing instead of living and expressing your wisdom.' },
-      { letter: 'E', text: 'Keeping yourself small inside a life that feels too narrow, predictable, or prescribed.' },
     ],
   },
   {
@@ -63,7 +58,6 @@ const QUESTIONS = [
       { letter: 'B', text: '"Build what truly matters."' },
       { letter: 'C', text: '"Protect what is sacred without hardening."' },
       { letter: 'D', text: '"Live the wisdom, not just understand it."' },
-      { letter: 'E', text: '"Turn freedom into a path, not an escape."' },
     ],
   },
   {
@@ -73,7 +67,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'Work that builds, organises, grows, improves, sells, creates value, or makes things better.' },
       { letter: 'C', text: 'Work that leads, protects, advocates, challenges, defends, or restores standards.' },
       { letter: 'D', text: 'Work that teaches, writes, interprets, advises, researches, explains, or guides.' },
-      { letter: 'E', text: 'Work that explores, invents, travels, disrupts, experiments, creates, or opens new territory.' },
     ],
   },
   {
@@ -83,7 +76,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'A clearer plan, better system, or more effective way forward.' },
       { letter: 'C', text: 'A stronger boundary, decision, standard, or act of courage.' },
       { letter: 'D', text: 'A deeper insight, teaching, principle, or truth that explains what is happening.' },
-      { letter: 'E', text: 'A new possibility, different environment, fresh start, or wider horizon.' },
     ],
   },
   {
@@ -93,7 +85,6 @@ const QUESTIONS = [
       { letter: 'B', text: '"I must keep improving, achieving, or producing to be valuable."' },
       { letter: 'C', text: '"I must stay strong, responsible, and in control because others will not."' },
       { letter: 'D', text: '"I must understand everything before I can fully live or act."' },
-      { letter: 'E', text: '"I must keep moving, escaping, or searching because ordinary life will trap me."' },
     ],
   },
   {
@@ -103,7 +94,6 @@ const QUESTIONS = [
       { letter: 'B', text: 'Making practical progress on something that feels meaningful and worth building.' },
       { letter: 'C', text: 'Taking one courageous stand, setting one boundary, or protecting something important.' },
       { letter: 'D', text: 'Turning one piece of wisdom or insight into visible expression, teaching, or practice.' },
-      { letter: 'E', text: 'Taking one honest step toward freedom, originality, exploration, or a more authentic direction.' },
     ],
   },
 ];
@@ -177,23 +167,6 @@ const TYPES = {
     orientationPhrase: 'Live the wisdom, not just understand it.',
     bridgeClause: 'where you may be hiding in thought',
   },
-  E: {
-    name: 'The Pathfinder',
-    meaningThrough: 'freedom, originality, exploration, reinvention, authenticity, and new ways forward',
-    p1: 'You may be someone who feels constrained by inherited scripts, narrow roles, predictable routes, or lives that look correct but feel too small. You may be drawn to fresh possibilities, alternative paths, creative freedom, travel, entrepreneurship, originality, spiritual exploration, or ways of living that others may not immediately understand.',
-    p2: 'The Pathfinder is not simply restless. At its best, this path senses when a new direction is needed before the old world can name it.',
-    p3: 'At your best, you open doors. You question assumptions. You explore what others avoid. You help life move beyond stale patterns.',
-    meaningList: 'exploring a new direction; questioning inherited assumptions; creating something original; reclaiming freedom and authenticity; stepping outside old roles; finding a path that feels more truthful than conventional.',
-    oldMapIntro: 'The Pathfinder can become distorted when freedom becomes escape, avoidance, or endless searching.',
-    oldMapQuote: 'I must keep moving, escaping, or searching because ordinary life will trap me.',
-    oldMapContext: 'You may have learned to distrust fixed structures. You may feel allergic to being boxed in. But freedom without orientation can become another kind of drift.',
-    deeperQuestion: 'Can I turn freedom into a path, not an escape?',
-    chapterP1: 'This chapter may be asking you to honour your need for freedom while giving it direction. Not to become conventional. Not to silence your originality. Not to return to a life that feels too narrow. But to create a path strong enough to carry your freedom.',
-    chapterP2: 'The Pathfinder’s next chapter often begins when searching is no longer enough. Something in you wants to choose, commit, create, or walk a more truthful direction.',
-    reflectionQ: 'Where am I seeking freedom — and where might I be avoiding commitment?',
-    orientationPhrase: 'Turn freedom into a path, not an escape.',
-    bridgeClause: 'what still feels alive',
-  },
 };
 
 const FAQS = [
@@ -211,7 +184,7 @@ const FAQS = [
   },
   {
     q: 'Is my full report written just for me?',
-    a: 'It’s written for your pattern rather than for you as an individual. There are five reports, one for each Purpose Path, and your answers point you to the one that fits best. That’s also exactly what the guarantee above covers: if it doesn’t accurately describe what’s going on for you, you don’t pay for it.',
+    a: 'It’s written for your pattern rather than for you as an individual. There are four reports, one for each Purpose Path, and your answers point you to the one that fits best. That’s also exactly what the guarantee above covers: if it doesn’t accurately describe what’s going on for you, you don’t pay for it.',
   },
   {
     q: 'What if my result feels wrong?',
@@ -234,7 +207,7 @@ const REPORT_INCLUDES = [
 /* ---------------------------------------------------------------------- */
 
 function scoreAnswers(answers) {
-  const tally = { A: 0, B: 0, C: 0, D: 0, E: 0 };
+  const tally = { A: 0, B: 0, C: 0, D: 0 };
   answers.forEach((letter) => {
     if (letter) tally[letter] += 1;
   });

@@ -3,7 +3,7 @@
 // GET /api/download?session_id=cs_...
 //
 // Asks Stripe whether that checkout session was actually PAID, works out which
-// of the five reports it was for, then streams that PDF out of the private
+// of the four reports it was for, then streams that PDF out of the private
 // Vercel Blob store. The PDFs are never in the public GitHub repo and have no
 // public URL — this route is the only door to them.
 

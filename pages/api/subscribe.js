@@ -7,11 +7,11 @@
 //   1. Ensures the "Purpose Path" custom field exists in Kit (creates it
 //      once, on first ever call; harmless no-op after that).
 //   2. Upserts the subscriber by email, setting that custom field to their
-//      result type (Steward / Optimizer / Protector / Guide / Pathfinder).
+//      result type (Steward / Optimizer / Protector / Guide).
 //   3. Applies the "Purpose Path Result" tag \u2014 always. This is the tag
 //      Manoj's single Kit automation is triggered by, and its one email
 //      uses a Liquid conditional on the Purpose Path field to send the
-//      correct one of five result bodies.
+//      correct one of four result bodies.
 //   4. Applies the "Meaning Map Updates" tag \u2014 only if the optional
 //      consent checkbox was ticked. This is separate from the required
 //      "send my result" consent and drives nothing automatically; it's
