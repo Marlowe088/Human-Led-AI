@@ -10,7 +10,7 @@ const SECTIONS = [
   {
     number: 2,
     title: 'Informational and Educational Purposes Only.',
-    html: `<p>All content &mdash; website pages, the Purpose Path<sup class="tm">™</sup> Diagnostic, the Meaning Map<sup class="tm">™</sup> report, and any future digital products &mdash; is provided for informational, educational, reflective, and personal development purposes only. It is not professional advice.</p>`,
+    html: `<p>All content on this website &mdash; its pages, the Human-Led AI Letters, and any future digital content &mdash; is provided for informational, educational, reflective, and personal development purposes only. It is not professional advice.</p>`,
   },
   {
     number: 3,
@@ -30,7 +30,7 @@ const SECTIONS = [
   {
     number: 6,
     title: 'No Guarantees.',
-    html: `<p>No specific outcome is guaranteed. Completing the diagnostic or purchasing the Meaning Map<sup class="tm">™</sup> does not guarantee finding your purpose, achieving clarity, improving relationships, or any other specific personal or professional result. Results will vary.</p>`,
+    html: `<p>No specific outcome is guaranteed. Reading this website&rsquo;s content does not guarantee finding your purpose, achieving clarity, improving relationships, or any other specific personal or professional result. Results will vary.</p>`,
   },
   {
     number: 7,
@@ -39,81 +39,71 @@ const SECTIONS = [
   },
   {
     number: 8,
-    title: 'The Purpose Path Diagnostic<sup class="tm">™</sup>.',
-    html: `<p>This tool is not a clinical, medical, psychological, or scientific assessment. It&rsquo;s intended to support self-reflection and orientation. Any result should be treated as a reflective prompt &mdash; not a fixed identity, diagnosis, or final verdict on your life.</p>`,
+    title: 'AI-Assisted Material.',
+    html: `<p>Some content on this website may involve AI-assisted tools. This can be useful but may contain errors or interpretations that don&rsquo;t apply to your situation. You should not rely on it as a substitute for your own judgment or professional advice.</p>`,
   },
   {
     number: 9,
-    title: 'The Meaning Map<sup class="tm">™</sup>.',
-    html: `<p>The Meaning Map<sup class="tm">™</sup> is a personal written report, built from your diagnostic answers, designed for educational and reflective purposes. It may help you understand the pattern currently shaping your decisions, what it&rsquo;s likely costing you, and one honest next step &mdash; but it does not guarantee a specific outcome, and it is not therapy, medical care, legal advice, or religious instruction. Your use of it remains your responsibility.</p>`,
-  },
-  {
-    number: 10,
-    title: 'AI-Assisted Material.',
-    html: `<p>Some content or diagnostic scoring may involve AI-assisted tools. This can be useful but may contain errors or interpretations that don&rsquo;t apply to your situation. You should not rely on it as a substitute for your own judgment or professional advice.</p>`,
-  },
-  {
-    number: 11,
     title: 'Accuracy, Completeness, and Suitability.',
     html: `<p>Reasonable care is taken to keep content accurate and useful, but no warranty is made that it&rsquo;s complete, current, or error-free. Content may be updated or changed at any time.</p>`,
   },
   {
-    number: 12,
+    number: 10,
     title: 'External Factors.',
     html: `<p>Personal, professional, and life outcomes are influenced by many factors outside the scope of this website &mdash; your circumstances, health, relationships, and choices among them. These are outside our control.</p>`,
   },
   {
-    number: 13,
+    number: 11,
     title: 'Testimonials, Examples, and Stories.',
     html: `<p>Any testimonials or examples shared are individual experiences, not guarantees of similar results.</p>`,
   },
   {
-    number: 14,
+    number: 12,
     title: 'Third-Party Links and Services.',
-    html: `<p>This website may link to or use third-party services (including Stripe, Kit, and Vercel). We don&rsquo;t control these services and aren&rsquo;t responsible for their content, availability, or practices. Use of third-party services is at your own discretion.</p>`,
+    html: `<p>This website may link to or use third-party services (including Kit and Vercel). We don&rsquo;t control these services and aren&rsquo;t responsible for their content, availability, or practices. Use of third-party services is at your own discretion.</p>`,
   },
   {
-    number: 15,
-    title: 'Digital Products and Consumer Rights.',
-    html: `<p>The Meaning Map<sup class="tm">™</sup> is delivered digitally, shortly after purchase. Nothing in this Disclaimer removes or reduces your statutory rights under applicable consumer law. Refunds and cancellations are handled per the Terms of Use and Refund Policy.</p>`,
+    number: 13,
+    title: 'No Products Currently Sold Directly.',
+    html: `<p>This website does not currently sell any product or service directly. If that changes, this Disclaimer will be updated alongside the Terms of Use and Refund Policy to reflect whatever is offered.</p>`,
   },
   {
-    number: 16,
+    number: 14,
     title: 'Privacy, Cookies, and Data.',
     html: `<p>Your use of this website may involve the collection of personal data, as explained in the Privacy Policy, and cookies as explained in the Cookies Policy.</p>`,
   },
   {
-    number: 17,
+    number: 15,
     title: 'Limitation of Liability.',
     html: `<p>To the fullest extent permitted by law, Manoj Tailor and manojtailor.com are not liable for loss arising from use of this website, reliance on its content, or third-party services, including financial loss, loss of opportunity, or indirect loss. Nothing here excludes liability that cannot legally be excluded, including for death or personal injury caused by negligence, fraud, or statutory rights that cannot be excluded.</p>`,
   },
   {
-    number: 18,
+    number: 16,
     title: 'No Warranties.',
-    html: `<p>All content and products are provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; with no warranty of fitness for a particular purpose, reliability, or error-free operation.</p>`,
+    html: `<p>All content on this website is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; with no warranty of fitness for a particular purpose, reliability, or error-free operation.</p>`,
   },
   {
-    number: 19,
+    number: 17,
     title: 'Global Use and Jurisdiction.',
     html: `<p>This website is operated from the United Kingdom but may be accessed globally. This Disclaimer is governed by the laws of England and Wales, subject to any mandatory consumer rights that apply in your jurisdiction.</p>`,
   },
   {
-    number: 20,
+    number: 18,
     title: 'Relationship With Other Policies.',
     html: `<p>This Disclaimer should be read alongside the Terms of Use, Privacy Policy, and Refund Policy. Where there&rsquo;s a conflict with any mandatory legal right you have, your legal right applies.</p>`,
   },
   {
-    number: 21,
+    number: 19,
     title: 'Changes to This Disclaimer.',
     html: `<p>This Disclaimer may be updated from time to time. The latest version is always available here.</p>`,
   },
   {
-    number: 22,
+    number: 20,
     title: 'Contact.',
     html: `<p>Email: <a href="mailto:manoj@manojtailor.com">manoj@manojtailor.com</a></p>`,
   },
   {
-    number: 23,
+    number: 21,
     title: 'Final Note.',
     html: `<p>This website is designed to support clearer thinking and deeper reflection &mdash; not to remove uncertainty, make decisions for you, or replace professional advice. It offers language, questions, and frameworks that may help you engage more consciously with your own life. Responsibility for your life remains with you.</p>`,
   },
@@ -126,7 +116,7 @@ export default function DisclaimerPage() {
         <title>Disclaimer — Manoj Tailor</title>
       </Head>
       <h1 className="legal-title">Disclaimer.</h1>
-      <p className="caption">manojtailor.com &middot; Last updated: September 2026.</p>
+      <p className="caption">manojtailor.com &middot; Last updated: October 2026.</p>
       <LegalSections sections={SECTIONS} />
     </>
   );

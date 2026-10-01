@@ -17,7 +17,7 @@ const SECTIONS = [
     title: 'Cookies This Website Currently Uses.',
     html: `<p>This website currently uses a small number of essential cookies, used by our hosting and payment providers to make the site and checkout work correctly:</p>
       <ul>
-        <li><strong>Essential/functional cookies</strong> &mdash; set by Vercel (our hosting provider) to support basic site operation, and by Stripe during checkout to process your payment securely. These cannot be switched off, as the site and checkout would not function correctly without them.</li>
+        <li><strong>Essential/functional cookies</strong> &mdash; set by Vercel (our hosting provider) to support basic site operation. These cannot be switched off, as the site would not function correctly without them.</li>
         <li><strong>Email service cookies or tracking pixels</strong> &mdash; if you receive emails from us via Kit (our email service provider), those emails may include tracking pixels that tell us whether an email was opened or a link clicked. This helps us understand what&rsquo;s useful and isn&rsquo;t. This is separate from website cookies and is covered in more detail in the Privacy Policy.</li>
       </ul>`,
   },
@@ -39,7 +39,7 @@ const SECTIONS = [
   {
     number: 7,
     title: 'Third-Party Cookies.',
-    html: `<p>Where a third-party provider (Vercel, Stripe, Kit) sets a cookie as part of delivering their service, that provider&rsquo;s own privacy and cookie practices apply alongside this policy. You can review their policies directly: Vercel&rsquo;s privacy policy, Stripe&rsquo;s privacy policy, and Kit&rsquo;s privacy policy.</p>`,
+    html: `<p>Where a third-party provider (Vercel, Kit) sets a cookie as part of delivering their service, that provider&rsquo;s own privacy and cookie practices apply alongside this policy. You can review their policies directly: Vercel&rsquo;s privacy policy, and Kit&rsquo;s privacy policy.</p>`,
   },
   {
     number: 8,
@@ -60,7 +60,7 @@ export default function CookiePolicyPage() {
         <title>Cookies Policy — Manoj Tailor</title>
       </Head>
       <h1 className="legal-title">Cookies Policy.</h1>
-      <p className="caption">manojtailor.com &middot; Last updated: September 2026.</p>
+      <p className="caption">manojtailor.com &middot; Last updated: October 2026.</p>
       <LegalSections sections={SECTIONS} />
     </>
   );

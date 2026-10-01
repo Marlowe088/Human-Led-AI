@@ -274,9 +274,9 @@ hr.rule {
 }
 
 .site-footer a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  color: #000000;
+  color: var(--ink);
   text-decoration: none;
 }
 
@@ -285,9 +285,9 @@ hr.rule {
 }
 
 .site-footer .byline {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  color: #000000;
+  color: var(--ink);
 }
 
 /* ---------- Diagnostic progress indicator ---------- */
