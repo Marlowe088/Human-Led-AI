@@ -83,6 +83,9 @@ sup.tm {
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
   max-width: 920px;
   margin: 0 auto;
   padding: 40px 24px 24px;
@@ -96,6 +99,24 @@ sup.tm {
   height: 34px;
   width: auto;
   display: block;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.site-nav a {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
 }
 
 /* ---------- Main content ---------- */

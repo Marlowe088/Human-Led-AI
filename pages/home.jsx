@@ -5,154 +5,237 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Your Life Is Working. So Why Doesn't It Feel Like Yours? — Manoj Tailor</title>
+        <title>Human-Led AI — Manoj Tailor</title>
         <meta
           name="description"
-          content="There's a specific, nameable pattern quietly running your decisions underneath the life you've built. Find out which one, in five minutes."
+          content="AI is rewriting the rules of work, power, truth and human value. Progress without surrender — a bridge between the technology and what remains human."
         />
       </Head>
 
       <div className="hero">
-        <h1>Your Life Is Working. So Why Doesn&rsquo;t It Feel Like Yours?</h1>
-
-        <p className="lede">
-          There&rsquo;s a specific, nameable pattern quietly running your decisions underneath the
-          life you&rsquo;ve built — and most advice can&rsquo;t help you, because it&rsquo;s written
-          before knowing which one is yours. Find out which one, in five minutes.
-        </p>
+        <h1>Human-Led AI.</h1>
+        <p className="lede">Clear. Capable. Human.</p>
+        <p className="lede">Progress without surrender.</p>
       </div>
 
-      <p>You know the feeling, even if you&rsquo;ve never quite said it out loud.</p>
+      <p>You&rsquo;re not imagining it.</p>
 
       <p>
-        You get up. You do the things that need doing. Work goes fine, mostly. The people around
-        you would say your life looks, from the outside, like it&rsquo;s working.
-      </p>
-
-      <p>And somewhere underneath all of it, quietly, you&rsquo;ve started to wonder what any of it is actually for.</p>
-
-      <p>
-        Not in a dramatic way. Nothing&rsquo;s fallen apart. You&rsquo;re not in crisis. You just
-        notice, some days more than others, that you&rsquo;re going through the motions of a life
-        you built — and it doesn&rsquo;t quite feel like yours anymore.
+        Something moved in the last three years, and almost nobody can point to the day it
+        happened.
       </p>
 
       <p>
-        Maybe it shows up as a low hum of restlessness you can&rsquo;t name. Maybe it&rsquo;s that
-        achievements that used to feel like something now barely register. Maybe it&rsquo;s simply
-        that you&rsquo;ve stopped being surprised by anything, and you miss that.
+        It may have showed up at work. Or in the news. Or in something a family member or friend
+        said over dinner that you had no answer to. And you found yourself thinking a thought you
+        have probably never said out loud:
+      </p>
+
+      <p><em>I&rsquo;m not sure where I stand in any of this anymore!</em></p>
+
+      <p>That is not you falling behind. That is your map going out of date.</p>
+
+      <p>
+        AI is rewriting the rules of work, power, truth and human value faster than any of us can
+        redraw them. So the question just sits there. Small, hard and permanent, like a stone in
+        your shoe.
+      </p>
+
+      <p><strong>Where do I stand in a world being reorganised by intelligent machines?</strong></p>
+
+      <p>I asked it about myself first. Everything here came out of trying to answer it.</p>
+
+      <h3>Thirty Years of Watching This&hellip;</h3>
+
+      <p>Commodore 64. ZX Spectrum. The screech of a dial-up modem making its case to the world.</p>
+
+      <p>
+        My first email took me the best part of three months to send. When it finally went, I
+        thought aliens had landed. I remember saying to friends: <em>you&rsquo;re telling me I type
+        words here, and someone on the other side of the planet reads them?</em>
       </p>
 
       <p>
-        You&rsquo;ve probably tried to talk yourself out of it. &ldquo;Plenty of people have it
-        worse. This is just what adult life is. I should be grateful.&rdquo; All true, and none of
-        it makes the feeling go away.
-      </p>
-
-      <p>Here&rsquo;s what&rsquo;s actually going on, and it&rsquo;s more specific than &ldquo;burnout&rdquo; or &ldquo;a phase&rdquo;:</p>
-
-      <p>
-        There&rsquo;s a pattern running underneath your daily decisions and life — one you
-        didn&rsquo;t choose, and most likely haven&rsquo;t named — quietly deciding what you
-        pursue, what you avoid, and what you tell yourself you don&rsquo;t have time to think
-        about.
+        Three decades later we have cars that drive themselves and machines that write, reason and
+        argue back. Who would ever have thought!
       </p>
 
       <p>
-        <em>Most advice won&rsquo;t find it, because most advice is written before it knows which
-        pattern is yours</em>.
+        All that time around technology has not made me a technologist. What it has given me is
+        more useful than that: the ability to tell a genuine turn in the road from a very loud
+        noise.
       </p>
 
-      <p>You&rsquo;ve probably already given this a name. Burnout. A midlife thing. Stress. Needing a break.</p>
+      <p>This one is a turn in the road.</p>
 
-      <p>None of those are wrong, exactly. They&rsquo;re just not it.</p>
+      <h3>The Maths.</h3>
+
+      <p>Out of curiosity, I asked an AI how long I might reasonably expect to live.</p>
+
+      <p>It gave me a number. Roughly twenty-five years.</p>
 
       <p>
-        Burnout describes a state. It doesn&rsquo;t explain why some weeks you have plenty of
-        energy and still feel like you&rsquo;re going through the motions. Stress explains
-        pressure. It doesn&rsquo;t explain why removing the pressure — a holiday, a quiet weekend,
-        a lighter month — doesn&rsquo;t actually fix the thing underneath it.
+        There is something absurd about accepting that from a machine. There is also something
+        clarifying about it, and I have not managed to unhear it since. Twenty-five years is not
+        nothing. It is not very much either.
       </p>
 
-      <p>
-        Here&rsquo;s the more accurate way to say it: <strong>your life can be entirely intact and
-        still not feel yours.</strong> Career fine. Relationships fine. Nothing visibly broken. And
-        underneath all of it, a specific, repeating pattern — not a mood, not a phase — quietly
-        deciding what you do, what you avoid, and what you tell yourself you don&rsquo;t have time
-        for.
-      </p>
-
-      <p>That&rsquo;s not burnout. That&rsquo;s a pattern running without your permission.</p>
-
-      <h3>You are not broken. You may be between maps.</h3>
+      <p>So: no time to waste, and no appetite for regret.</p>
 
       <p>
-        <strong>If you&rsquo;ve read the self-help books, tried the habit trackers</strong>, sat
-        with a journal a few times and let it lapse — none of that means you failed. It means you
-        were handed a generic answer to a specific problem.
+        I want what I do next to outlast me. Not a product. A body of work resting on principles
+        old enough and human enough to still be true however capable these machines become.
       </p>
 
       <p>
-        Most advice in personal development and self-help is written for everyone, which means
-        it&rsquo;s actually written for no one. It assumes the reader&rsquo;s blocker is
-        discipline, or mindset, or not knowing enough yet. For some people, that&rsquo;s true. For
-        most people carrying this particular weight, it isn&rsquo;t — the blocker isn&rsquo;t a
-        lack of information or willpower. It&rsquo;s that no one has correctly identified{' '}
-        <em>which</em> pattern is running their life before telling them what to do about it.
+        That is what this is. A fresh canvas for the next phase &mdash; an odd thing to say about a
+        road I started walking thirty-five years ago. I expect to be at it for the rest of my
+        life.
+      </p>
+
+      <p>Unless the agent armies get to me first.</p>
+
+      <h3>What AI Cannot Take.</h3>
+
+      <p>
+        If intelligence itself is changing hands, I wanted to know what was left. What is actually
+        still ours.
+      </p>
+
+      <p>This is what I keep arriving at.</p>
+
+      <p>
+        <strong>
+          Judgment. Taste. Empathy. Ethics. Creativity. Context. Responsibility. Wisdom.
+          Relationship. Meaning.
+        </strong>
+      </p>
+
+      <p>Not one of those is a feature. Every one is a practice.</p>
+
+      <p>
+        Which means every one of them fades if you stop using it. That is the quiet risk of an age
+        that offers, very politely, to do your thinking for you.
       </p>
 
       <p>
-        That&rsquo;s the actual reason &ldquo;I understand everything but still can&rsquo;t
-        change&rdquo; happens. You can&rsquo;t out-effort a pattern you haven&rsquo;t named.
+        Read the list again and the anxious question changes shape. It stops being{' '}
+        <em>what will be taken from me.</em> It becomes something far more useful.
       </p>
 
-      <h2>Why Can&rsquo;t I Just Use AI?</h2>
+      <p><em>What am I going to do with what is left?</em></p>
 
       <p>
-        <strong>You may have already asked an AI about this.</strong> Plenty of people have —
-        described the feeling, asked what it means, got back something articulate and
-        true-sounding in seconds.
+        You still have agency. The whole move is from <strong>human-threatened</strong> to{' '}
+        <strong>human-led</strong>.
+      </p>
+
+      <h3>The Question Underneath The Question.</h3>
+
+      <p>Everyone is asking how to use AI.</p>
+
+      <p>Almost nobody is asking what we are building with it.</p>
+
+      <p>
+        Job displacement. The quiet erosion of skill. Surveillance. Bias. Misinformation and
+        deepfakes. Autonomous weapons. Power collecting into fewer and fewer hands, corporate and
+        governmental alike. What all of it does to our children&rsquo;s schooling &mdash; and to
+        our dependence on machines for thought itself.
+      </p>
+
+      <p>One concern sits underneath every one of those, and I cannot put it down.</p>
+
+      <p><em>Intelligence without wisdom is a dangerous thing to build at scale.</em></p>
+
+      <p>
+        Which is why I keep saying the same thing to anyone who will listen. AI is not only a
+        technology shift. It is fundamentally a human question.
+      </p>
+
+      <p>And it is being done to us faster than any of us were ever asked to agree to it.</p>
+
+      <h3>Where I Stand.</h3>
+
+      <p>I am not anti-AI. I have used it every day since January 2023.</p>
+
+      <p>
+        But I want progress without surrender. I want to be more capable{' '}
+        <strong>because</strong> I am human, not in spite of it.
       </p>
 
       <p>
-        Here&rsquo;s the honest limit of that. AI isn&rsquo;t the enemy, and it&rsquo;s a
-        genuinely useful tool for plenty of things — thinking, researching, organising. But it
-        reveals something rather than solving it: the problem was never a shortage of answers. We
-        have answers everywhere now, more than any person could absorb, and still feel unsure how
-        to live.
+        You cannot afford to ignore this. You cannot afford to trust it blindly either. Almost
+        everything written about AI insists you pick one &mdash; doom or opportunity, refuse or
+        submit.
+      </p>
+
+      <p>I stand in the middle. I am building a bridge, and you are welcome to cross it if you choose.</p>
+
+      <h3>What You Will Find Here.</h3>
+
+      <p>
+        Plain English. No jargon, no acronyms, nothing that needs a translator. If a thing cannot
+        be said simply, it usually was not understood in the first place.
       </p>
 
       <p>
-        An AI can tell you what&rsquo;s been said. It can summarise, compare, and sound wise doing
-        it. What it can&rsquo;t do is carry your history, feel the cost of your choices, or know
-        what your specific responsibilities, relationships, and quiet longings are actually asking
-        of you right now. It can give you answers. It does not have your human judgement.
-      </p>
-
-      <p>Answers aren&rsquo;t the same as orientation.</p>
-
-      <p>
-        There are a small number of distinct patterns that quietly take over when someone&rsquo;s
-        life is functioning but their sense of self has gone quiet. Not personality types. Not
-        vague archetypes. Specific, recognisable ways of personal operating that explain the
-        contradictions you already notice in yourself — why you&rsquo;re capable everywhere except
-        the one place it matters most, why you keep the peace at your own expense, why &ldquo;just
-        relax more&rdquo; has never once worked.
+        This is about how to live, work, lead, think and decide in a world shared with intelligent
+        machines. Not another software manual. A better manual &mdash; and a better way to use
+        everything the manuals describe.
       </p>
 
       <p>
-        You have one of these running more than the others. Most people do. And once it&rsquo;s
-        correctly named, the advice stops being generic — because it&rsquo;s no longer written for
-        everyone. It&rsquo;s written for what&rsquo;s actually happening in your own life.
+        It exists so you keep your meaning, your creativity, your capability and your judgment
+        intact while the world reorganises itself around you. So that anxiety turns into agency.
       </p>
 
       <p>
-        <strong>That&rsquo;s the whole premise here: diagnosis before prescription.</strong>
+        Most AI writing tells you what the technology does. Very little of it tells you what the
+        technology means for you &mdash; your work, your family, your one life. That gap is the
+        entire reason this site is here.
       </p>
 
-      <p style={{ marginTop: 'var(--space-4)' }}>
-        <Link href="/diagnostic" className="cta">
-          Find Your Pattern — Takes 5 Minutes →
+      <p>
+        I call the practice <strong>Human-Led AI Soulcraft</strong>. You will meet it properly soon
+        enough.
+      </p>
+
+      <h3>One Caution, Including About Me.</h3>
+
+      <p>If you meet anyone who claims to have AI figured out, walk away quickly.</p>
+
+      <p>
+        We went from ChatGPT&rsquo;s first research preview in November 2022 to today&rsquo;s
+        frontier systems in under four years. Nobody credible knows where the next four go. I am
+        still learning. I will be wrong about things, in public, and probably more than once.
+      </p>
+
+      <p>
+        What I can offer is not certainty. It is a way of thinking that holds its shape while the
+        tools keep changing underneath it.
+      </p>
+
+      <h3>Still Here?</h3>
+
+      <p>Good.</p>
+
+      <p>Then something in this landed.</p>
+
+      <p>
+        Before you go any further, there is one thing about me you should probably know. It makes
+        almost no sense &mdash; until it does.
+      </p>
+
+      <p>
+        I am a technophobe. I cannot code. For most of my life, the most technical thing I did
+        reliably was send that email.
+      </p>
+
+      <p>So why would a man like that walk head-first into artificial intelligence?</p>
+
+      <p style={{ marginTop: 'var(--space-2)' }}>
+        <Link href="/about" className="cta">
+          That story is this way →
         </Link>
       </p>
     </>
