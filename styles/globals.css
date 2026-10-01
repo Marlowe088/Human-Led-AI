@@ -205,8 +205,8 @@ main th {
 
 hr.rule {
   border: none;
-  border-top: 3px solid var(--ink);
-  margin: var(--space-6) 0;
+  border-top: 1px solid var(--border);
+  margin: var(--space-5) 0;
 }
 
 .lede {
@@ -274,8 +274,9 @@ hr.rule {
 }
 
 .site-footer a {
-  font-size: 16px;
-  font-weight: 700;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   color: var(--ink);
   text-decoration: none;
 }
@@ -285,8 +286,9 @@ hr.rule {
 }
 
 .site-footer .byline {
-  font-size: 16px;
-  font-weight: 700;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   color: var(--ink);
 }
 
