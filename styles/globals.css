@@ -109,7 +109,7 @@ sup.tm {
 
 .site-nav a {
   font-family: 'Public Sans', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--ink);
   text-decoration: none;
@@ -276,18 +276,18 @@ hr.rule {
 .site-footer a {
   font-size: 16px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent);
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 .site-footer .byline {
   font-size: 16px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--ink-muted);
 }
 
 /* ---------- Diagnostic progress indicator ---------- */
