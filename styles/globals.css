@@ -52,7 +52,11 @@ a:hover {
 }
 
 a.link-dark {
-  color: var(--ink);
+  color: var(--ink-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 a.link-dark:hover {
