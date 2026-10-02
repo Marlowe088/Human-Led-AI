@@ -52,7 +52,7 @@ a:hover {
 }
 
 a.link-dark {
-  color: var(--ink-deep);
+  color: var(--accent);
   font-weight: 700;
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -60,7 +60,7 @@ a.link-dark {
 }
 
 a.link-dark:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 sup.tm {

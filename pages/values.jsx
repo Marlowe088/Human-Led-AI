@@ -112,7 +112,7 @@ export default function ValuesPage() {
 
       <p>
         Thanks for stopping by and reading this page.{' '}
-        <Link href="/contact" className="link-dark">Contact me at anytime</Link>
+        <Link href="/contact" className="link-dark">Contact me at anytime.</Link>
       </p>
 
       <p>I will be waiting.</p>
