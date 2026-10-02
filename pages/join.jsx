@@ -205,9 +205,7 @@ export default function JoinPage() {
         </form>
       )}
 
-      <p style={{ marginTop: 'var(--space-4)' }}>~Manoj</p>
-
-      <BrandSignature />
+      <BrandSignature signoff="~Manoj" />
     </>
   );
 }

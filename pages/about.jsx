@@ -195,16 +195,12 @@ export default function AboutPage() {
         </Link>
       </p>
 
-      <hr className="rule" />
-
       <p>
         Please contact me any time. I read every email myself &mdash; no filters, no assistant
         standing between us.
       </p>
 
-      <p>~ Manoj</p>
-
-      <BrandSignature />
+      <BrandSignature signoff="~Manoj" />
     </>
   );
 }

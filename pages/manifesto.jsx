@@ -206,9 +206,7 @@ export default function ManifestoPage() {
         </Link>
       </p>
 
-      <p style={{ marginTop: 'var(--space-4)' }}>~Manoj.</p>
-
-      <BrandSignature />
+      <BrandSignature signoff="~Manoj" />
     </>
   );
 }
