@@ -69,12 +69,6 @@ export default function ValuesPage() {
         with our customers, subscribers and clients &mdash; as one of being their most trusted
         advisor, counsel and confidant.
       </p>
-      <p>
-        We want to be seen as the definitive expert source, and the most trusted advisor, and as
-        a fiduciary &mdash; as someone who has taken on the responsibility of their governance,
-        their decisions, their best interests, as their most trusted counsel.
-      </p>
-
       <h3>Going beyond the obvious.</h3>
       <p>Always looking within and without and asking better questions of ourselves. We are resourceful.</p>
 
@@ -116,15 +110,14 @@ export default function ValuesPage() {
       </p>
       <p>We are on a path of self-discovery and ultimately self-realisation.</p>
 
-      <hr className="rule" />
-
       <p>
-        Thanks for stopping by and reading this page. <Link href="/contact">Contact us any time.</Link>
+        Thanks for stopping by and reading this page.{' '}
+        <Link href="/contact" className="link-dark">Contact me at anytime</Link>
       </p>
 
       <p>I will be waiting.</p>
 
-      <BrandSignature />
+      <BrandSignature signoff="~Manoj" />
     </>
   );
 }

@@ -3,7 +3,7 @@ export default function BrandSignature({ signoff }) {
     <p className="brand-signature">
       {signoff && (
         <>
-          {signoff}
+          <span className="brand-signature-name">{signoff}</span>
           <br />
         </>
       )}

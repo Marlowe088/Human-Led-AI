@@ -196,7 +196,7 @@ export default function AboutPage() {
       </p>
 
       <p>
-        Please contact me any time. I read every email myself &mdash; no filters, no assistant
+        Please contact me any time. I read every email myself &mdash; no filters, no AI assistant
         standing between us.
       </p>
 
