@@ -43,17 +43,17 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--logo-indigo);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--accent-hover);
+  color: var(--accent);
 }
 
 a.link-dark {
-  color: var(--accent);
+  color: var(--logo-indigo);
   font-weight: 700;
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -61,7 +61,7 @@ a.link-dark {
 }
 
 a.link-dark:hover {
-  color: var(--accent-hover);
+  color: var(--accent);
 }
 
 sup.tm {
@@ -264,16 +264,16 @@ hr.rule {
   font-size: 16px;
   font-weight: 600;
   color: var(--bg);
-  background: var(--accent);
+  background: var(--logo-indigo);
   padding: 16px 28px;
   text-decoration: none;
   border-radius: 2px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--logo-indigo);
 }
 
 .cta:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
+  background: var(--accent);
+  border-color: var(--accent);
   color: var(--bg);
 }
 
@@ -452,7 +452,7 @@ hr.rule {
 }
 
 .checkbox-row label a {
-  color: var(--accent);
+  color: var(--logo-indigo);
 }
 
 /* ---------- CTA disabled state ---------- */
