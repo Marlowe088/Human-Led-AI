@@ -5,6 +5,7 @@
   --bg-alt: #efece5;
   --ink: #2a2420;
   --ink-deep: #1b1715;
+  --logo-indigo: #4d5aa8;
   --ink-muted: #6b6259;
   --accent: #2e3350;
   --accent-hover: #22263f;
@@ -129,7 +130,7 @@ sup.tm {
 }
 
 .site-nav a:hover {
-  color: var(--accent);
+  color: var(--logo-indigo);
 }
 
 /* ---------- Main content ---------- */
@@ -308,7 +309,7 @@ hr.rule {
 }
 
 .site-footer a:hover {
-  color: var(--accent);
+  color: var(--logo-indigo);
 }
 
 .site-footer .byline {
