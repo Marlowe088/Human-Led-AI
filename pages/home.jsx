@@ -37,7 +37,7 @@ export default function HomePage() {
 
       <p>
         AI is rewriting the rules of work, power, truth and human value faster than any of us can
-        redraw them. So the question just sits there. Small, hard and permanent, like a stone in
+        catch our breath. So the question just sits there. Small, hard and permanent, like a stone in
         your shoe.
       </p>
 
