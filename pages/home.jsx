@@ -174,7 +174,7 @@ export default function HomePage() {
       <h3>What You Will Find Here.</h3>
 
       <p>
-        Plain English. No jargon, no acronyms, nothing that needs a translator. If a thing cannot
+        Plain English. No jargon, no acronyms, nothing that needs a translator. If it cannot
         be said simply, it usually was not understood in the first place.
       </p>
 
