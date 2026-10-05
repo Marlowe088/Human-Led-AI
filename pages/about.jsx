@@ -17,8 +17,6 @@ export default function AboutPage() {
 
       <h3>The One-Eyed Marksman.</h3>
 
-      <p>So here is the part that makes no sense until it does.</p>
-
       <p>
         I am a technophobe. I do not code. For most of my adult life, the most technical thing I
         did with any reliability was send an email &mdash; and, as you now know, even that took me
@@ -32,7 +30,7 @@ export default function AboutPage() {
 
       <p>
         It sounds like a contradiction. A one-eyed marksman deciding to become a sniper. It
-        isn&rsquo;t, and here is why.
+        isn&rsquo;t, and here&rsquo;s why.
       </p>
 
       <h3>January 2023.</h3>
