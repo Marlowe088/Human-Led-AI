@@ -24,7 +24,8 @@ export default function ValuesPage() {
       <p>
         The values below are the ones I have chosen which define who I am and what I believe
         in both in business and in life so you know what you can expect from me if, and when, you
-        are ready to join.
+        are ready to join{' '}
+        <Link href="/join" className="link-dark">Human-Led AI Letters</Link>.
       </p>
 
       <h3>This Is What I Stand For:</h3>
