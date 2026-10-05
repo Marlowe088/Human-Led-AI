@@ -199,7 +199,7 @@ export default function JoinPage() {
 
           <div className="cta-row">
             <button type="submit" className="cta" disabled={loading}>
-              {loading ? 'One moment\u2026' : 'Join Letters →'}
+              {loading ? 'One moment\u2026' : 'Join Human-Led AI Letters →'}
             </button>
           </div>
         </form>
