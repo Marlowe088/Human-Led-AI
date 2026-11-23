@@ -530,7 +530,7 @@ blockquote.pull-quote {
     gap: 16px;
   }
   .site-nav a {
-    font-size: clamp(12px, 3.8vw, 15px);
+    font-size: clamp(12.5px, 4vw, 16px);
   }
   main {
     padding-top: var(--space-2);
@@ -539,11 +539,11 @@ blockquote.pull-quote {
     margin-top: 0;
   }
   .hero h1 {
-    font-size: clamp(12px, 3.4vw, 13.6px);
+    font-size: clamp(12px, 3.73vw, 14.9px);
     margin-bottom: var(--space-2);
   }
   .hero .lede {
-    font-size: clamp(11.5px, 3.33vw, 13px);
+    font-size: clamp(11.5px, 3.52vw, 14.1px);
   }
   .hero h1 + .lede {
     margin-bottom: var(--space-1);
