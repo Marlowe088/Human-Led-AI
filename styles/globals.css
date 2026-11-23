@@ -559,4 +559,7 @@ blockquote.pull-quote {
     font-size: 20px;
     margin-bottom: var(--space-2);
   }
+  .hero .lede {
+    font-size: 17px;
+  }
 }
