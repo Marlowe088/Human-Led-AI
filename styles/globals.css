@@ -96,9 +96,9 @@ sup.tm {
 /* ---------- Header ---------- */
 .site-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-2);
   max-width: 920px;
   margin: 0 auto;
@@ -117,7 +117,9 @@ sup.tm {
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   gap: var(--space-3);
 }
 
@@ -522,18 +524,10 @@ blockquote.pull-quote {
   }
   .site-header {
     padding: 28px 24px 20px;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-  }
-  .site-header a.logo-link {
-    align-self: center;
   }
   .site-nav {
-    flex-wrap: nowrap;
     gap: 16px;
-    align-self: center;
-    justify-content: center;
   }
   .site-nav a {
     font-size: clamp(12px, 3.8vw, 15px);
