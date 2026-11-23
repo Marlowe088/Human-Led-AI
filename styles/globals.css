@@ -532,6 +532,8 @@ blockquote.pull-quote {
   .site-nav {
     flex-wrap: nowrap;
     gap: 16px;
+    align-self: center;
+    justify-content: center;
   }
   .site-nav a {
     font-size: clamp(12px, 3.8vw, 15px);
