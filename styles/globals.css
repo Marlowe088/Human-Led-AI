@@ -526,6 +526,9 @@ blockquote.pull-quote {
     align-items: flex-start;
     gap: 16px;
   }
+  .site-header a.logo-link {
+    align-self: center;
+  }
   .site-nav {
     flex-wrap: nowrap;
     gap: 16px;
