@@ -562,4 +562,7 @@ blockquote.pull-quote {
   .hero .lede {
     font-size: 17px;
   }
+  .hero h1 + .lede {
+    margin-bottom: var(--space-1);
+  }
 }
