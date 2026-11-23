@@ -3,9 +3,7 @@ import Link from 'next/link';
 const NAV = [
   { href: '/home', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/manifesto', label: 'Manifesto' },
-  { href: '/join', label: 'Join' },
-  { href: '/values', label: 'Values' },
+  { href: '/join', label: 'Join Human-Led AI Letters' },
 ];
 
 export default function Header() {

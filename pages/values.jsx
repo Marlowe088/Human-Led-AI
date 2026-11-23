@@ -6,6 +6,7 @@ export default function ValuesPage() {
   return (
     <>
       <Head>
+        <meta name="robots" content="noindex, nofollow" />
         <title>My Values — Manoj Tailor</title>
         <meta
           name="description"

@@ -20,30 +20,29 @@ export default function HomePage() {
 
       <p>You&rsquo;re not imagining it.</p>
 
-      <p>
-        Something moved in the last three years, and almost nobody can point to the day it
-        happened.
-      </p>
+      <p>Something has moved massively in the last three years.</p>
 
       <p>
-        It may have showed up at work. Or in the news. Or in something a family member or friend
-        said over dinner that you had no answer to. And you found yourself thinking a thought you
-        have probably never said out loud:
+        It may have showed up at work. In the news. Something a family member or friend said over
+        dinner that you had no answer to. And you found yourself thinking a thought you have
+        probably never said out loud:
       </p>
 
       <p><em>I&rsquo;m not sure where I stand in any of this anymore!</em></p>
 
-      <p>That is not you falling behind. That is your map going out of date.</p>
+      <p>That is not you falling behind. That is your present map going out of date.</p>
 
       <p>
         AI is rewriting the rules of work, power, truth and human value faster than any of us can
-        catch our breath. So the question just sits there. Small, hard and permanent, like a stone in
-        your shoe.
+        catch our breath. So, the question just sits there. Small, hard and permanent.
       </p>
 
-      <p><strong>Where do I stand in a world being reorganised by intelligent machines?</strong></p>
+      <p><strong>&ldquo;Where do I stand in a world being reorganised by intelligent machines?&rdquo;</strong></p>
 
-      <p>I asked it about myself first. Everything here came out of trying to answer it.</p>
+      <p>
+        I asked this question to myself first. Everything you read on this site here came out of
+        trying to answer it.
+      </p>
 
       <h3>Thirty Years of Watching This&hellip;</h3>
 
@@ -57,7 +56,7 @@ export default function HomePage() {
 
       <p>
         Three decades later we have cars that drive themselves and machines that write, reason and
-        argue back. Who would ever have thought!
+        argue back. Really?
       </p>
 
       <p>
@@ -72,11 +71,11 @@ export default function HomePage() {
 
       <p>Out of curiosity, I asked an AI how long I might reasonably expect to live.</p>
 
-      <p>It gave me a number. Roughly twenty-five years.</p>
+      <p>It gave me a number. Roughly thirty-five years.</p>
 
       <p>
         There is something absurd about accepting that from a machine. There is also something
-        clarifying about it, and I have not managed to unhear it since. Twenty-five years is not
+        clarifying about it, and I have not managed to unhear it since. Thirty-five years is not
         nothing. It is not very much either.
       </p>
 
@@ -88,12 +87,10 @@ export default function HomePage() {
       </p>
 
       <p>
-        That is what this is. A fresh canvas for the next phase &mdash; an odd thing to say about a
-        road I started walking thirty-five years ago. I expect to be at it for the rest of my
-        life.
+        That is what this is. A fresh canvas for the next phase an odd thing to say about a
+        road I started walking thirty-five years ago. This is a life-long project for me. Unless
+        the agent armies get to me first.
       </p>
-
-      <p>Unless the agent armies get to me first.</p>
 
       <h3>What AI Cannot Take.</h3>
 
@@ -138,9 +135,14 @@ export default function HomePage() {
 
       <p>
         Job displacement. The quiet erosion of skill. Surveillance. Bias. Misinformation and
-        deepfakes. Autonomous weapons. Power collecting into fewer and fewer hands, corporate and
-        governmental alike. What all of it does to our children&rsquo;s schooling &mdash; and to
-        our dependence on machines for thought itself.
+        deepfakes. Autonomous weapons. Power collecting into fewer and fewer hands -
+        corporate and governmental alike. What all of it does to our children&rsquo;s schooling and
+        to our dependence on machines for thought itself.
+      </p>
+
+      <p>
+        The effect of increasing data centres being built around the world and their effects and
+        impact on land, water and electricity.
       </p>
 
       <p>One concern sits underneath every one of those, and I cannot put it down.</p>
@@ -165,7 +167,7 @@ export default function HomePage() {
 
       <p>
         You cannot afford to ignore this. You cannot afford to trust it blindly either. Almost
-        everything written about AI insists you pick one &mdash; doom or opportunity, refuse or
+        everything written about AI insists you pick one - doom or opportunity, refuse or
         submit.
       </p>
 
@@ -180,7 +182,7 @@ export default function HomePage() {
 
       <p>
         This is about how to live, work, lead, think and decide in a world shared with intelligent
-        machines. Not another software manual. A better manual &mdash; and a better way to use
+        machines. Not another software manual. A better manual - and a better way to use
         everything the manuals describe.
       </p>
 
@@ -191,13 +193,12 @@ export default function HomePage() {
 
       <p>
         Most AI writing tells you what the technology does. Very little of it tells you what the
-        technology means for you &mdash; your work, your family, your one life. That gap is the
+        technology means for you - your work, your family, your one life. That gap is the
         entire reason this site is here.
       </p>
 
       <p>
-        I call the practice <strong>Human-Led AI Soulcraft</strong>. You will meet it properly soon
-        enough.
+        I call the practice <strong>Human-Led AI</strong>.
       </p>
 
       <h3>One Caution, Including About Me.</h3>
@@ -205,9 +206,9 @@ export default function HomePage() {
       <p>If you meet anyone who claims to have AI figured out, walk away quickly.</p>
 
       <p>
-        We went from ChatGPT&rsquo;s first research preview in November 2022 to today&rsquo;s
-        frontier systems in under four years. Nobody credible knows where the next four go. I am
-        still learning. I will be wrong about things, in public, and probably more than once.
+        We went from ChatGPT&rsquo;s arriving in November 2022 to today&rsquo;s frontier systems in
+        under four years. Nobody credible knows where the next four go. I am still learning. I
+        will be wrong about things, in public, and probably more than once.
       </p>
 
       <p>
@@ -223,7 +224,7 @@ export default function HomePage() {
 
       <p>
         Before you go any further, there is one thing about me you should probably know. It makes
-        almost no sense &mdash; until it does.
+        almost no sense until it does.
       </p>
 
       <p>

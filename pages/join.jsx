@@ -43,7 +43,7 @@ export default function JoinPage() {
         <title>Join — Manoj Tailor</title>
         <meta
           name="description"
-          content="A short seven-day email series that picks up where the manifesto left off. Free, no sales pitch, unsubscribe any time."
+          content="A short seven-day email series, one idea at a time. Free, no sales pitch, unsubscribe any time."
         />
       </Head>
 
@@ -51,11 +51,11 @@ export default function JoinPage() {
 
       <p>
         You will not find a buy button on this page. There is no cart, no price, nowhere to pull
-        out a credit card even if you wanted to &mdash; I know how strange that is to read on a
-        page that clearly wants something from you.
+        out a credit card even if you wanted to. I know how strange that is to read on a page that
+        clearly wants something from you.
       </p>
 
-      <p>Stay with me anyway.</p>
+      <p>Stay with me.</p>
 
       <h3>Where This Actually Leads.</h3>
 
@@ -64,13 +64,13 @@ export default function JoinPage() {
       <p>This is where you step forward and it starts simply, with an email address.</p>
 
       <p>
-        You will receive a short seven day email series, one email a day for seven days &mdash;
-        real emails, not marketing hype and promotions, roughly five minutes each to read &mdash;
-        that pick up exactly where the manifesto left off. Call it a further orientation. One idea
-        at a time, in the order your mind can actually absorb it, instead of all of it at once.
+        You will receive a short seven day email series, one email a day for seven days -
+        real emails, not marketing hype and promotions, roughly five minutes each. Call it a
+        further orientation. One idea at a time, in the order your mind can actually absorb it,
+        instead of at once.
       </p>
 
-      <p>By the end of them, one of two things will be true.</p>
+      <p>By the end of them, one of two things will ring true.</p>
 
       <p>
         You will still be here, and you will want more. Or you will have found the unsubscribe
@@ -86,14 +86,14 @@ export default function JoinPage() {
 
       <h3>Why Free, And Why First.</h3>
 
-      <p>The easy version of this page would ask for your money before you&rsquo;ve had a chance to think.</p>
+      <p>The easy version of this page would ask for your money for an offer before you&rsquo;ve had a chance to think.</p>
 
       <p>
         I would rather ask for a week of your inbox instead. Slower. Quieter. The opposite of the
-        noise and dopamine everyone else seems to be selling around AI right now. Nobody rushes
-        you into agency. You arrive at it, one honest email at a time &mdash; and by the time
-        anything costs anything, you will already know exactly what you are and are not saying yes
-        to.
+        noise and dopamine hits everyone else seems to be selling around AI right now. Nobody
+        rushes you into agency. You arrive at it, one honest email at a time and by the
+        time anything costs anything, you will already know exactly what you are and are not
+        saying yes to.
       </p>
 
       <p>
@@ -105,14 +105,14 @@ export default function JoinPage() {
 
       <p>That is the whole email series, compressed into one line.</p>
 
-      <h3>Imagine This.</h3>
+      <h3>Now Imagine This.</h3>
 
       <p>Picture two roads leaving the same junction.</p>
 
       <p>
         One is crowded, fast, and everyone on it is checking over their shoulder to see how far
         behind they&rsquo;ve fallen. The other is quieter, a little slower, and the people walking
-        it are looking straight ahead &mdash; not because they&rsquo;re behind, but because they
+        it are looking straight ahead - not because they&rsquo;re behind, but because they
         already decided where they&rsquo;re going before they started moving.
       </p>
 
@@ -128,13 +128,13 @@ export default function JoinPage() {
 
       <p>
         Self-awareness is the starting line, not the finish. That is genuinely all this asks of
-        you at the start &mdash; attention, for about five minutes a day, for a week.
+        you at the start attention and more importantly your trust in me for about five
+        minutes a day, for a week.
       </p>
 
       <p>
-        Or you can stay exactly where you are, doing exactly what you&rsquo;ve always done. No
-        judgment here either way. Some people are not ready yet, and that&rsquo;s a perfectly
-        honest place to be.
+        Or you can stay exactly where you are. No judgment on my part either way. Some people are
+        not ready yet, and that&rsquo;s a perfectly honest place to be.
       </p>
 
       <p>You know your own crossroads better than I do. I&rsquo;m just here to make sure you see it clearly before you choose.</p>
@@ -142,7 +142,7 @@ export default function JoinPage() {
       <h3>Keep Visiting.</h3>
 
       <p>
-        This site is still young, and it is going to keep expanding &mdash; more letters, more
+        This site is still young, and it is going to keep expanding more letters, more
         essays, more of the map filled in.
       </p>
 
@@ -191,7 +191,7 @@ export default function JoinPage() {
             />
             <label htmlFor="join-consent">
               Send me the Human-Led AI Letters and occasional related emails. I can unsubscribe
-              any time &mdash; see the Privacy Policy for how your data is used.
+              any time - see the Privacy Policy for how your data is used.
             </label>
           </div>
 
@@ -202,6 +202,13 @@ export default function JoinPage() {
               {loading ? 'One moment\u2026' : 'Join Human-Led AI Letters →'}
             </button>
           </div>
+
+          <p>
+            <strong>
+              You&rsquo;ll have to confirm your subscription to join my list. If you do not see the
+              confirmation in your inbox, check your spam, junk or promotions folder.
+            </strong>
+          </p>
         </form>
       )}
 

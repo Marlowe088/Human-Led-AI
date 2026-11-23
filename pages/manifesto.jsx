@@ -6,6 +6,7 @@ export default function ManifestoPage() {
   return (
     <>
       <Head>
+        <meta name="robots" content="noindex, nofollow" />
         <title>Manifesto — Manoj Tailor</title>
         <meta
           name="description"
