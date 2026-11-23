@@ -539,11 +539,11 @@ blockquote.pull-quote {
     margin-top: 0;
   }
   .hero h1 {
-    font-size: clamp(11.5px, 3.4vw, 13.6px);
+    font-size: clamp(12px, 3.4vw, 13.6px);
     margin-bottom: var(--space-2);
   }
   .hero .lede {
-    font-size: clamp(11px, 3.2vw, 12.8px);
+    font-size: clamp(11.5px, 3.33vw, 13px);
   }
   .hero h1 + .lede {
     margin-bottom: var(--space-1);
