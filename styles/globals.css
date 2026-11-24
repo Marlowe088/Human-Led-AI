@@ -587,3 +587,28 @@ blockquote.pull-quote {
 .hero .lede.hero-intro {
   margin-bottom: var(--space-3);
 }
+
+/* ---------- Homepage hero portrait and tagline ---------- */
+.hero-portrait {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: var(--space-1) auto var(--space-2);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero .lede.hero-tagline {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media (max-width: 640px) {
+  .hero-portrait {
+    width: 104px;
+    height: 104px;
+  }
+  .hero .lede.hero-tagline {
+    font-size: clamp(13.5px, 4.2vw, 17px);
+  }
+}
