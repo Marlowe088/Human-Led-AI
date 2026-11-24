@@ -15,6 +15,14 @@ export default function HomePage() {
       <div className="hero">
         <h1>Human-Led AI.</h1>
         <p className="lede">Clear. Capable. Human.</p>
+        <p className="lede hero-intro">
+          In a world racing to automate everything, I help thoughtful people cross the bridge
+          between technology and meaning. I help you to move from AI anxiety to AI clarity, so you
+          can live, work, lead and decide with your own judgement, creativity and purpose all
+          intact. Not another tool to keep up with, but timeless principles for a machine-shaped
+          world. Principles over prompts. Wisdom over information. Human agency over automation.
+          <br />~ <Link href="/about">Manoj Tailor</Link>
+        </p>
         <p className="lede">Progress without surrender.</p>
       </div>
 

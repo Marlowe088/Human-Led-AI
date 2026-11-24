@@ -582,3 +582,8 @@ blockquote.pull-quote {
     margin-bottom: var(--space-1);
   }
 }
+
+/* ---------- Homepage hero intro paragraph ---------- */
+.hero .lede.hero-intro {
+  margin-bottom: var(--space-1);
+}
